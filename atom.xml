@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://akashiya-chime.github.io/</id>
     <title>AkashiyaChime</title>
-    <updated>2021-02-18T12:34:22.579Z</updated>
+    <updated>2021-02-18T16:10:19.447Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://akashiya-chime.github.io/"/>
     <link rel="self" href="https://akashiya-chime.github.io/atom.xml"/>
@@ -11,35 +11,204 @@
     <icon>https://akashiya-chime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, AkashiyaChime</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://akashiya-chime.github.io/post/hello-gridea/</id>
-        <link href="https://akashiya-chime.github.io/post/hello-gridea/">
+        <title type="html"><![CDATA[Webpack打包基础]]></title>
+        <id>https://akashiya-chime.github.io/post/webpack/</id>
+        <link href="https://akashiya-chime.github.io/post/webpack/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <updated>2021-02-18T15:48:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite</p>
+<p><em>文章放 CSDN 上了：</em></p>
+<blockquote>
+<p><a href="https://blog.csdn.net/Akashiyachime/article/details/106841056">https://blog.csdn.net/Akashiyachime/article/details/106841056</a></p>
+</blockquote>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite</p>
+<p><em>文章放 CSDN 上了：</em></p>
+<blockquote>
+<p><a href="https://blog.csdn.net/Akashiyachime/article/details/106841056">https://blog.csdn.net/Akashiyachime/article/details/106841056</a></p>
+</blockquote>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<ul>
+<li>
+<p>前端资源构建工具，静态模块打包器</p>
+</li>
+<li>
+<p>坑：</p>
+<p>如果你webpack和webpack-cli是局部安装的，想要使用webpack命令必须进入node_modules/.bin/webpack才能执行webpack命令，.bin目录包含的是一系列可以执行的命令，但是如果你是全局安装的webpack-cli，就不需要进入bin目录，webpack就能够寻找到它的命令路径了，以上是我的个人总结<br>
+（所以说啥本地安装啊，还是安全局的吧。。。）</p>
+</li>
+</ul>
+<h2 id="核心概念">核心概念</h2>
+<table>
+<thead>
+<tr>
+<th>Entry</th>
+<th>入口(Entry)指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td>输出(Output)指示Webpack打包后的资源bundle输出到哪里去，以及如何命名</td>
+</tr>
+<tr>
+<td>Loader</td>
+<td>Loader让Webpack能够去处理哪些非JavaScript文件(Webpack自身只理解JavaScript)</td>
+</tr>
+<tr>
+<td>Plugins</td>
+<td>插件(Plugins)可以用于执行范围更广的任务。插件范围包括，从打包优化和压缩，一直到重新定义环境中的变量等</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>模式(Mode)指示Webpack使用相应的模式的配置</td>
+</tr>
+</tbody>
+</table>
+<h2 id="流程">流程</h2>
+<ul>
+<li>index.js： Webpack 入口起点文件</li>
+</ul>
+<ol>
+<li>运行指令：<br>
+开发环境：<code>webpack ./src/index.js -o ./build/built.js --mode=development</code><br>
+webpack 会以 <code>./src/index.js</code> 为入口文件开始打包，打包后输出到 <code>.build/built.js</code><br>
+整体打包环境是 开发环境<br>
+生产环境：<code>webpack ./src/index.js -o ./build/built.js --mode=production</code></li>
+<li>结论：<br>
+（1）webpack 能处理 <code>js/json</code> 资源，不能处理 <code>css/img</code> 等资源<br>
+（2）生产环境和开发环境将 ES6 模块化编译成浏览器能识别的模块化<br>
+（3）生产环境比开发环境多一个压缩 <code>js</code> 代码</li>
+</ol>
+<h2 id="打包样式资源">打包样式资源</h2>
+<ul>
+<li>
+<p>src 同级目录下创建 <code>webpack.config.js</code> 文件，该文件是 webpack 的配置文件<br>
+作用：指示 webpack 工作（运行 webpack 指令时，会加载里面的配置）</p>
+<ul>
+<li>
+<p>所有构建工具都是基于 node.js 平台运行，模块化默认采用 commonjs</p>
+<pre><code class="language-javascript">// resolve 用来拼接绝对路径的方法
+const { resolve } = require('path')
+
+module.exports = {
+    // webpake 配置
+    // 入口起点
+    entry: './src/index.js',
+    // 输出
+    output: {
+        // 输出文件名
+        filename: 'built.js',
+        // 输出路径
+        // __dirname 是 node.js 的变量，代表当前文件的目录绝对路径
+        path: resolve(__dirname, 'build')
+    },
+    // loader 的配置
+    module: {
+        rules: [
+            // 详细的 loader 配置
+            // 不同文件必须配置不同的 loader 处理
+            {
+                // 匹配哪些文件
+                test: /\.css$/,
+                // 使用哪些 loader 进行处理
+                // 当要使用多个 loader 时，需用 use: []
+                use: [
+                    // use 数组中 loader 执行顺序：从后到前，依次执行
+                    // 创建 style 标签，将 js 中的样式资源插入进去，添加到&lt;header&gt;中生效
+                    'style-loader',  //后执行
+                    // 将 css 文件变成 commonjs 模块加载 js 中，里面内容是样式字符串
+                    'css-loader'  //先执行
+                ]
+            }
+        ]
+    },
+    // plugins 的配置
+    plugins: [
+        // 详细的 plugins 配置
+    ],
+    // 模式
+    mode: 'development'  // 开发模式
+    // mode: 'production'  //生产模式
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="打包html">打包html</h2>
+<ul>
+<li>需要一个 plugin：<code>html-webpack-plugin</code></li>
+</ul>
+<pre><code class="language-javascript">const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
+    plugins: [
+        // 默认创建空的 HTML，自动引入打包输出的所有资源（JS/CSS）
+        // 需要有结构的 HTML
+        new HtmlWebpackPlugin({
+            // 复制 './src/index.html' 文件，并自动引入打包输出的所有资源（JS/CSS）
+            template: './src/index.html'
+        })
+    ]
+}
+</code></pre>
+<h2 id="打包图片资源">打包图片资源</h2>
+<ul>
+<li>需要一个 loader：</li>
+</ul>
+<pre><code class="language-javascript">module.exports = {
+    module: {
+        rules: [
+            {
+                // 问题：默认处理不了 html 中引入图片（可处理样式中的图片）
+            	test: /\.(jpg|png|gif)$/,
+            	// 当只有一个 loader 时，可直接loader:
+            	loader: 'url-loader'
+            	option: {
+            		// 图片大小小于 8kb ，就会被 base64 处理（一般 8~12kb）
+            		// 优点：减少请求数量（减轻服务器压力）
+            		// 缺点：图片体积会更大（文件请求速度更慢）
+            		limit: 8 * 1024,  // 8kb
+                	// 问题：因为 url-loader 默认使用 ES6 模块化解析
+                	// 而 html-loader 引入图片是 commonjs
+                	// 解析时会出问题：[object Module]
+                	// 解决：关闭 url-loader 的 ES6 模块化，使用 commonjs解析
+                	esModule: false,
+                	// 给图片进行重命名
+                	// [hash:10] 取图片的 hash 前10位
+                	// [ext] 取文件原来的扩展名
+                	name: '[hash:10].[ext]'
+            	}
+            },
+            {
+            	test: /\.html$/,
+            	// 处理 html 文件的图片（引入 img，从而能被 url-loader 处理）
+            	loader: 'html-loader'
+            }
+        ]
+    }
+}
+// 最终图片的名称是一个 hash 值
+</code></pre>
+<h2 id="打包其他资源">打包其他资源</h2>
+<ul>
+<li>一些不需要进行压缩等处理的文件</li>
+</ul>
+<pre><code class="language-javascript">module.exports = {
+    module: {
+        rules: [
+            // 打包其他资源（除了 html/js/css 资源以外的资源）
+            {
+                // 排除
+                exclude: /\.html|js|css$/,
+                loader: 'file-loader'
+            }
+        ]
+    }
+}
+// 也是 hash 值（也可以用 options 处理一下）
+</code></pre>
 ]]></content>
     </entry>
 </feed>

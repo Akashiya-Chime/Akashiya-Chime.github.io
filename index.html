@@ -1,161 +1,807 @@
-
+<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
 
-<title>AkashiyaChime</title>
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="Blog">
+<meta name="theme-color" content="#00a1d6">
+<title>AkashiyaChime</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1613664616916">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://akashiya-chime.github.io//favicon.ico?v=1613651659346">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://akashiya-chime.github.io//styles/main.css">
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
 
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://akashiya-chime.github.io/">
-        <img class="avatar" src="https://akashiya-chime.github.io//images/avatar.png?v=1613651659346" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://akashiya-chime.github.io/">
-        <h1 class="site-title">AkashiyaChime</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-      <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://akashiya-chime.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://akashiya-chime.github.io/tag/qE_ah3H67/">
-                Gridea
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
     
-      <a href="https://akashiya-chime.github.io/post/hello-gridea/">
-        <div class="feature-container" style="background-image: url('https://akashiya-chime.github.io//post-images/hello-gridea.png')">
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
         </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>AkashiyaChime</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">精于心，简于形</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
 </div>
 
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-      </div>
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
 
-      <div class="site-footer">
-  <div class="slogan">Blog</div>
-  <div class="social-container">
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
     
-      
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
     
-      
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">Akashiya Chime</p>
     
+    <div class="site-description right-motion">
       
-    
       
-    
       
+        <p>本科生在读，思考跨专业考研</p>
+      
+        <p>新建学习文档</p>
+      
+      
+    </div>
     
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://akashiya-chime.github.io//atom.xml" target="_blank">RSS</a>
-</div>
-
-
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
     </div>
-    <script type="application/javascript">
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
 
-hljs.initHighlightingOnLoad()
+  
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box gemini">
+          <section class="section  posts-expand slide-down-in">
+            
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://akashiya-chime.github.io/post/webpack/">
+      Webpack打包基础
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2021-02-18</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>5分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>1137<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          <p>之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite</p>
+<p><em>文章放 CSDN 上了：</em></p>
+<blockquote>
+<p><a href="https://blog.csdn.net/Akashiyachime/article/details/106841056">https://blog.csdn.net/Akashiyachime/article/details/106841056</a></p>
+</blockquote>
+
+        
+        
+        <div class="post-button text-center">
+          <a class="btn" href="https://akashiya-chime.github.io/post/webpack/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </article>
+  
+            
+            
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 
 </script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://akashiya-chime.github.io/post/webpack/"" data-c="
+          &lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;文章放 CSDN 上了：&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;前端资源构建工具，静态模块打包器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;坑：&lt;/p&gt;
+&lt;p&gt;如果你webpack和webpack-cli是局部安装的，想要使用webpack命令必须进入node_modules/.bin/webpack才能执行webpack命令，.bin目录包含的是一系列可以执行的命令，但是如果你是全局安装的webpack-cli，就不需要进入bin目录，webpack就能够寻找到它的命令路径了，以上是我的个人总结&lt;br&gt;
+（所以说啥本地安装啊，还是安全局的吧。。。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;核心概念&#34;&gt;核心概念&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Entry&lt;/th&gt;
+&lt;th&gt;入口(Entry)指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Output&lt;/td&gt;
+&lt;td&gt;输出(Output)指示Webpack打包后的资源bundle输出到哪里去，以及如何命名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Loader&lt;/td&gt;
+&lt;td&gt;Loader让Webpack能够去处理哪些非JavaScript文件(Webpack自身只理解JavaScript)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plugins&lt;/td&gt;
+&lt;td&gt;插件(Plugins)可以用于执行范围更广的任务。插件范围包括，从打包优化和压缩，一直到重新定义环境中的变量等&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mode&lt;/td&gt;
+&lt;td&gt;模式(Mode)指示Webpack使用相应的模式的配置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;流程&#34;&gt;流程&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;index.js： Webpack 入口起点文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;运行指令：&lt;br&gt;
+开发环境：&lt;code&gt;webpack ./src/index.js -o ./build/built.js --mode=development&lt;/code&gt;&lt;br&gt;
+webpack 会以 &lt;code&gt;./src/index.js&lt;/code&gt; 为入口文件开始打包，打包后输出到 &lt;code&gt;.build/built.js&lt;/code&gt;&lt;br&gt;
+整体打包环境是 开发环境&lt;br&gt;
+生产环境：&lt;code&gt;webpack ./src/index.js -o ./build/built.js --mode=production&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;结论：&lt;br&gt;
+（1）webpack 能处理 &lt;code&gt;js/json&lt;/code&gt; 资源，不能处理 &lt;code&gt;css/img&lt;/code&gt; 等资源&lt;br&gt;
+（2）生产环境和开发环境将 ES6 模块化编译成浏览器能识别的模块化&lt;br&gt;
+（3）生产环境比开发环境多一个压缩 &lt;code&gt;js&lt;/code&gt; 代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;打包样式资源&#34;&gt;打包样式资源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;src 同级目录下创建 &lt;code&gt;webpack.config.js&lt;/code&gt; 文件，该文件是 webpack 的配置文件&lt;br&gt;
+作用：指示 webpack 工作（运行 webpack 指令时，会加载里面的配置）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;所有构建工具都是基于 node.js 平台运行，模块化默认采用 commonjs&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// resolve 用来拼接绝对路径的方法
+const { resolve } = require(&#39;path&#39;)
+
+module.exports = {
+    // webpake 配置
+    // 入口起点
+    entry: &#39;./src/index.js&#39;,
+    // 输出
+    output: {
+        // 输出文件名
+        filename: &#39;built.js&#39;,
+        // 输出路径
+        // __dirname 是 node.js 的变量，代表当前文件的目录绝对路径
+        path: resolve(__dirname, &#39;build&#39;)
+    },
+    // loader 的配置
+    module: {
+        rules: [
+            // 详细的 loader 配置
+            // 不同文件必须配置不同的 loader 处理
+            {
+                // 匹配哪些文件
+                test: /\.css$/,
+                // 使用哪些 loader 进行处理
+                // 当要使用多个 loader 时，需用 use: []
+                use: [
+                    // use 数组中 loader 执行顺序：从后到前，依次执行
+                    // 创建 style 标签，将 js 中的样式资源插入进去，添加到&amp;lt;header&amp;gt;中生效
+                    &#39;style-loader&#39;,  //后执行
+                    // 将 css 文件变成 commonjs 模块加载 js 中，里面内容是样式字符串
+                    &#39;css-loader&#39;  //先执行
+                ]
+            }
+        ]
+    },
+    // plugins 的配置
+    plugins: [
+        // 详细的 plugins 配置
+    ],
+    // 模式
+    mode: &#39;development&#39;  // 开发模式
+    // mode: &#39;production&#39;  //生产模式
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;打包html&#34;&gt;打包html&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;需要一个 plugin：&lt;code&gt;html-webpack-plugin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;const HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;)
+
+module.exports = {
+    plugins: [
+        // 默认创建空的 HTML，自动引入打包输出的所有资源（JS/CSS）
+        // 需要有结构的 HTML
+        new HtmlWebpackPlugin({
+            // 复制 &#39;./src/index.html&#39; 文件，并自动引入打包输出的所有资源（JS/CSS）
+            template: &#39;./src/index.html&#39;
+        })
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;打包图片资源&#34;&gt;打包图片资源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;需要一个 loader：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;module.exports = {
+    module: {
+        rules: [
+            {
+                // 问题：默认处理不了 html 中引入图片（可处理样式中的图片）
+            	test: /\.(jpg|png|gif)$/,
+            	// 当只有一个 loader 时，可直接loader:
+            	loader: &#39;url-loader&#39;
+            	option: {
+            		// 图片大小小于 8kb ，就会被 base64 处理（一般 8~12kb）
+            		// 优点：减少请求数量（减轻服务器压力）
+            		// 缺点：图片体积会更大（文件请求速度更慢）
+            		limit: 8 * 1024,  // 8kb
+                	// 问题：因为 url-loader 默认使用 ES6 模块化解析
+                	// 而 html-loader 引入图片是 commonjs
+                	// 解析时会出问题：[object Module]
+                	// 解决：关闭 url-loader 的 ES6 模块化，使用 commonjs解析
+                	esModule: false,
+                	// 给图片进行重命名
+                	// [hash:10] 取图片的 hash 前10位
+                	// [ext] 取文件原来的扩展名
+                	name: &#39;[hash:10].[ext]&#39;
+            	}
+            },
+            {
+            	test: /\.html$/,
+            	// 处理 html 文件的图片（引入 img，从而能被 url-loader 处理）
+            	loader: &#39;html-loader&#39;
+            }
+        ]
+    }
+}
+// 最终图片的名称是一个 hash 值
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;打包其他资源&#34;&gt;打包其他资源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一些不需要进行压缩等处理的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;module.exports = {
+    module: {
+        rules: [
+            // 打包其他资源（除了 html/js/css 资源以外的资源）
+            {
+                // 排除
+                exclude: /\.html|js|css$/,
+                loader: &#39;file-loader&#39;
+            }
+        ]
+    }
+}
+// 也是 hash 值（也可以用 options 处理一下）
+&lt;/code&gt;&lt;/pre&gt;
+">Webpack打包基础</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;文章放 CSDN 上了：&lt;/em&gt;&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;&lt;a href=\&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056\&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;!-- more --&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;前端资源构建工具，静态模块打包器&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;坑：&lt;/p&gt;\n&lt;p&gt;如果你webpack和webpack-cli是局部安装的，想要使用webpack命令必须进入node_modules/.bin/webpack才能执行webpack命令，.bin目录包含的是一系列可以执行的命令，但是如果你是全局安装的webpack-cli，就不需要进入bin目录，webpack就能够寻找到它的命令路径了，以上是我的个人总结&lt;br&gt;\n（所以说啥本地安装啊，还是安全局的吧。。。）&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2 id=\&#34;核心概念\&#34;&gt;核心概念&lt;/h2&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;Entry&lt;/th&gt;\n&lt;th&gt;入口(Entry)指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;Output&lt;/td&gt;\n&lt;td&gt;输出(Output)指示Webpack打包后的资源bundle输出到哪里去，以及如何命名&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Loader&lt;/td&gt;\n&lt;td&gt;Loader让Webpack能够去处理哪些非JavaScript文件(Webpack自身只理解JavaScript)&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Plugins&lt;/td&gt;\n&lt;td&gt;插件(Plugins)可以用于执行范围更广的任务。插件范围包括，从打包优化和压缩，一直到重新定义环境中的变量等&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Mode&lt;/td&gt;\n&lt;td&gt;模式(Mode)指示Webpack使用相应的模式的配置&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h2 id=\&#34;流程\&#34;&gt;流程&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;index.js： Webpack 入口起点文件&lt;/li&gt;\n&lt;/ul&gt;\n&lt;ol&gt;\n&lt;li&gt;运行指令：&lt;br&gt;\n开发环境：&lt;code&gt;webpack ./src/index.js -o ./build/built.js --mode=development&lt;/code&gt;&lt;br&gt;\nwebpack 会以 &lt;code&gt;./src/index.js&lt;/code&gt; 为入口文件开始打包，打包后输出到 &lt;code&gt;.build/built.js&lt;/code&gt;&lt;br&gt;\n整体打包环境是 开发环境&lt;br&gt;\n生产环境：&lt;code&gt;webpack ./src/index.js -o ./build/built.js --mode=production&lt;/code&gt;&lt;/li&gt;\n&lt;li&gt;结论：&lt;br&gt;\n（1）webpack 能处理 &lt;code&gt;js/json&lt;/code&gt; 资源，不能处理 &lt;code&gt;css/img&lt;/code&gt; 等资源&lt;br&gt;\n（2）生产环境和开发环境将 ES6 模块化编译成浏览器能识别的模块化&lt;br&gt;\n（3）生产环境比开发环境多一个压缩 &lt;code&gt;js&lt;/code&gt; 代码&lt;/li&gt;\n&lt;/ol&gt;\n&lt;h2 id=\&#34;打包样式资源\&#34;&gt;打包样式资源&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;src 同级目录下创建 &lt;code&gt;webpack.config.js&lt;/code&gt; 文件，该文件是 webpack 的配置文件&lt;br&gt;\n作用：指示 webpack 工作（运行 webpack 指令时，会加载里面的配置）&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;所有构建工具都是基于 node.js 平台运行，模块化默认采用 commonjs&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-javascript\&#34;&gt;// resolve 用来拼接绝对路径的方法\nconst { resolve } = require(&#39;path&#39;)\n\nmodule.exports = {\n    // webpake 配置\n    // 入口起点\n    entry: &#39;./src/index.js&#39;,\n    // 输出\n    output: {\n        // 输出文件名\n        filename: &#39;built.js&#39;,\n        // 输出路径\n        // __dirname 是 node.js 的变量，代表当前文件的目录绝对路径\n        path: resolve(__dirname, &#39;build&#39;)\n    },\n    // loader 的配置\n    module: {\n        rules: [\n            // 详细的 loader 配置\n            // 不同文件必须配置不同的 loader 处理\n            {\n                // 匹配哪些文件\n                test: /\\.css$/,\n                // 使用哪些 loader 进行处理\n                // 当要使用多个 loader 时，需用 use: []\n                use: [\n                    // use 数组中 loader 执行顺序：从后到前，依次执行\n                    // 创建 style 标签，将 js 中的样式资源插入进去，添加到&amp;lt;header&amp;gt;中生效\n                    &#39;style-loader&#39;,  //后执行\n                    // 将 css 文件变成 commonjs 模块加载 js 中，里面内容是样式字符串\n                    &#39;css-loader&#39;  //先执行\n                ]\n            }\n        ]\n    },\n    // plugins 的配置\n    plugins: [\n        // 详细的 plugins 配置\n    ],\n    // 模式\n    mode: &#39;development&#39;  // 开发模式\n    // mode: &#39;production&#39;  //生产模式\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2 id=\&#34;打包html\&#34;&gt;打包html&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;需要一个 plugin：&lt;code&gt;html-webpack-plugin&lt;/code&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-javascript\&#34;&gt;const HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;)\n\nmodule.exports = {\n    plugins: [\n        // 默认创建空的 HTML，自动引入打包输出的所有资源（JS/CSS）\n        // 需要有结构的 HTML\n        new HtmlWebpackPlugin({\n            // 复制 &#39;./src/index.html&#39; 文件，并自动引入打包输出的所有资源（JS/CSS）\n            template: &#39;./src/index.html&#39;\n        })\n    ]\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;打包图片资源\&#34;&gt;打包图片资源&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;需要一个 loader：&lt;/li&gt;\n&lt;/ul&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-javascript\&#34;&gt;module.exports = {\n    module: {\n        rules: [\n            {\n                // 问题：默认处理不了 html 中引入图片（可处理样式中的图片）\n            \ttest: /\\.(jpg|png|gif)$/,\n            \t// 当只有一个 loader 时，可直接loader:\n            \tloader: &#39;url-loader&#39;\n            \toption: {\n            \t\t// 图片大小小于 8kb ，就会被 base64 处理（一般 8~12kb）\n            \t\t// 优点：减少请求数量（减轻服务器压力）\n            \t\t// 缺点：图片体积会更大（文件请求速度更慢）\n            \t\tlimit: 8 * 1024,  // 8kb\n                \t// 问题：因为 url-loader 默认使用 ES6 模块化解析\n                \t// 而 html-loader 引入图片是 commonjs\n                \t// 解析时会出问题：[object Module]\n                \t// 解决：关闭 url-loader 的 ES6 模块化，使用 commonjs解析\n                \tesModule: false,\n                \t// 给图片进行重命名\n                \t// [hash:10] 取图片的 hash 前10位\n                \t// [ext] 取文件原来的扩展名\n                \tname: &#39;[hash:10].[ext]&#39;\n            \t}\n            },\n            {\n            \ttest: /\\.html$/,\n            \t// 处理 html 文件的图片（引入 img，从而能被 url-loader 处理）\n            \tloader: &#39;html-loader&#39;\n            }\n        ]\n    }\n}\n// 最终图片的名称是一个 hash 值\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;打包其他资源\&#34;&gt;打包其他资源&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;一些不需要进行压缩等处理的文件&lt;/li&gt;\n&lt;/ul&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-javascript\&#34;&gt;module.exports = {\n    module: {\n        rules: [\n            // 打包其他资源（除了 html/js/css 资源以外的资源）\n            {\n                // 排除\n                exclude: /\\.html|js|css$/,\n                loader: &#39;file-loader&#39;\n            }\n        ]\n    }\n}\n// 也是 hash 值（也可以用 options 处理一下）\n&lt;/code&gt;&lt;/pre&gt;\n&#34;,&#34;fileName&#34;:&#34;webpack&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;文章放 CSDN 上了：&lt;/em&gt;&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;&lt;a href=\&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056\&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;\n&lt;/blockquote&gt;\n&#34;,&#34;title&#34;:&#34;Webpack打包基础&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-02-18 23:48:46&#34;,&#34;dateFormat&#34;:&#34;2021-02-18&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://akashiya-chime.github.io/post/webpack/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:270000,&#34;words&#34;:1137,&#34;minutes&#34;:5},&#34;description&#34;:&#34;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite\n文章放 CSDN 上了：\n\nhttps://blog.csdn.net/Akashiyachim...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5\&#34;&gt;核心概念&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%B5%81%E7%A8%8B\&#34;&gt;流程&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%89%93%E5%8C%85%E6%A0%B7%E5%BC%8F%E8%B5%84%E6%BA%90\&#34;&gt;打包样式资源&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%89%93%E5%8C%85html\&#34;&gt;打包html&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%89%93%E5%8C%85%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90\&#34;&gt;打包图片资源&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%89%93%E5%8C%85%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90\&#34;&gt;打包其他资源&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
 
 
 
-
-  </body>
 </html>
