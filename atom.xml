@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://akashiya-chime.github.io/</id>
     <title>AkashiyaChime</title>
-    <updated>2021-02-21T09:59:40.110Z</updated>
+    <updated>2021-02-27T08:19:38.053Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://akashiya-chime.github.io/"/>
     <link rel="self" href="https://akashiya-chime.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://akashiya-chime.github.io/images/avatar.png</logo>
     <icon>https://akashiya-chime.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, AkashiyaChime</rights>
+    <entry>
+        <title type="html"><![CDATA[软件汇总]]></title>
+        <id>https://akashiya-chime.github.io/post/ruan-jian-hui-zong/</id>
+        <link href="https://akashiya-chime.github.io/post/ruan-jian-hui-zong/">
+        </link>
+        <updated>2021-02-27T07:45:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。</p>
+<p><em>代表个人习惯，用的舒服才是好的</em></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。</p>
+<p><em>代表个人习惯，用的舒服才是好的</em></p>
+<!--more-->
+<h2 id="win10-美化">Win10 美化</h2>
+<h3 id="bitdock">BitDock</h3>
+<p>官网：<a href="http://www.bitdock.cn/">http://www.bitdock.cn/</a></p>
+<p>官方视频：<a href="https://www.bilibili.com/video/BV1eE411A7ht?zw">https://www.bilibili.com/video/BV1eE411A7ht?zw</a></p>
+<p>预览图：<img src="https://akashiya-chime.github.io//post-images/1614412022107.png" alt="" loading="lazy"></p>
+<img src="C:\Users\Akashiya\AppData\Roaming\Typora\typora-user-images\image-20210227154216403.png" alt="image-20210227154216403" style="zoom:50%;" />
+<ul>
+<li>给 Win10 整个 Mac 的 Dock 栏，挺好看的。</li>
+<li>支持几个皮肤</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[假期总结]]></title>
         <id>https://akashiya-chime.github.io/post/jia-qi-zong-jie/</id>
