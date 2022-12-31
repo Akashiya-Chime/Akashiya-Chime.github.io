@@ -1,0 +1,766 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="AkashiyaChime">
+  <meta name="keywords" content="Blog">
+  
+    <meta name="description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端   前言 之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重拾前端+后段重构">
+<meta property="og:url" content="https://akashiya-chime.github.io/2021/05/26/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF+%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/index.html">
+<meta property="og:site_name" content="AkashiyaChime">
+<meta property="og:description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端   前言 之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://akashiya-chime.github.io/img/front-back.jpg">
+<meta property="article:published_time" content="2021-05-26T02:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-30T06:36:27.241Z">
+<meta property="article:author" content="AkashiyaChime">
+<meta property="article:tag" content="Go">
+<meta property="article:tag" content="Vue3">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://akashiya-chime.github.io/img/front-back.jpg">
+  
+  
+  
+  <title>重拾前端+后段重构 - AkashiyaChime</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"akashiya-chime.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 80vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>AkashiyaChime</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/helltaker.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="重拾前端+后段重构"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2021-05-26 10:00" pubdate>
+          2021年5月26日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          73 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">重拾前端+后段重构</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>本文包含并不限于以下内容：</p>
+<ul>
+<li>
+<p>拿到 ECS 搞到域名后进行域名备案</p>
+</li>
+<li>
+<p>Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目</p>
+</li>
+<li>
+<p>nodejs + express 搭建后端后使用 Go 重构后端</p>
+</li>
+</ul>
+<h1>前言</h1>
+<p>之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，兴趣上来了，开始尝试用新生态借着服务器好好做一个前端项目，又拿 node 做了后端，5月过半，高数的复习陷入了一种莫名的疲软，感觉一直找不到做题的感觉，学到重积分，但题一直没法向前做着走，就准备搞点别的东西让自己缓缓（然而要准备开始复习专业课了，难受）。Golang，或者叫 Go 吧，Google 里的人开发的，静态强类型，编译型，很像 C，但比 C 安全、好用，天生支持高并发，用过的都说香（所以为什么函数不支持可选参数和默认参数）。所以拿来做后端 Web 服务针不戳，试试。</p>
+<h1>域名备案</h1>
+<p><em>这可真是个辛苦的差事，辛苦我室友了。</em></p>
+<p>我们在去听某人工智能讲座的时候就开始讨论取域名的事，这也不是件容易的事 :joy:，换来换去才把价格高、被占用、不「好看」的域名给避开。然后就是让人头大的域名备案了，不是亲身经历还真不敢信这东西这么复杂。因为是从阿里买的域名，通过阿里备案，先在阿里过个审，填各种表，把各种各样的个人信息填了个全，就生怕网警找不到你。他们处理了好几天（还算快吧），然后有专人给我们打电话，说他们那边完事了，已经把信息给管局（通信管理局）了，还得去管局短信验证，然后，好家伙，「12天左右回复」，正好又赶上五一假，拖了有半个月管局才给回复说过了，叫把备案号挂网站上，又说可能按地方网警要求还得去搞个公安备案，又是「把身上有几颗痔数清楚了填上去」（你别说，就我写此文的时候，还没拿到公安备案号）。总结来说，要想备案，做好被「扒光」的准备以及十足的耐心。</p>
+<h1>搭建前端项目</h1>
+<p>Vue3 发布有一段时间了（春节左右发布），开始想接触接触了，加上 Vite2 发布了，看了一眼发现好像挺香的，这不又有服务器了嘛，怎么能没有想在浏览器地址栏敲上个 IP 就能看到点东西的冲动呢，所以就开始执行了。</p>
+<p>虽然不知道要想做成个啥样子，但出于学习的目的就都试试（淦，我软件工程学了个啥？），第一步，新建 .psd，还是线在 notion 上开了个页面放自己的 Todo List，自己觉得这个还是很有必要的，知道自己一向做这些东西的时间跨度比较大，怕忘了自己做过什么骚操作结果忘了出大事。</p>
+<p>然后就是喜闻乐见的新建文件夹开始疯狂 npm init @vitejs/app 选择 vue，选择 ts，写不来样式得找个组件库，嗯 npm install element -S ，哦淦，得是支持 Vue3 的版本，uninstall 了重新 npm install element-plus -S，那肯定得整个 Router，npm install vue-router@4，嗯，然后呢。。。</p>
+<img src="https://i.loli.net/2021/05/22/ZCduKUnStPN54Ws.png" srcset="/img/loading.gif" lazyload>
+<p>玩过一阵子的 Vue2，就照着之前的记忆开始建 components，开始建 router，虽然是 TypeScript，但好歹学过一点，做的时候还专门借了基本 ts 的教材，所以基础的写写没有太大问题，然后就是疯狂查 Element-Plus 的文档和 API 了，虽然方便，但用着难受，有着各种各样的 bug，就用了几个组件就修了几天 bug，这些 bug 来自 ts、来自组件本身、最多应该还是来自 Vue3。</p>
+<p>Vue3 相较 Vue2 还是改了很多东西的（至少我用着把自己用自闭了），一个生命周期上的 setup() （也就是所谓的 Composition API ？），我找了各种视频讲解，对着文档仔仔细细看了好几遍才懂了个大概（视频都讲的比较底层，然而我现在是想知道怎么用，看得有点晕）。</p>
+<p>这里列出一个绕了几天的问题做个例子。我准备在 HomePage 上放一个走马灯轮播室友给的猫猫图，所以找到 Element-Plus 的走马灯组件，最终选取了卡片式的这种类型</p>
+<img src="https://i.loli.net/2021/05/22/zH5SQxTCWo3JLmt.png" srcset="/img/loading.gif" lazyload>
+<p>走马灯上的图片是通过 v-for 遍历上去的，我把 item 做成 img 标签，通过 :src=“item” 属性来填充图片地址，然后被遍历的对象应该是一个数组，里面放图片的静态位置或者通过图床后的 url，和室友讨论后决定使用图床。然后我想了想，准备把 url 保存在服务器，然后通过 GET 把它发回到前端来（虽然现在想想自己的操作挺迷幻了，不知道自己绕来绕去是追求个啥）。</p>
+<p>后端接口很快写好，前段这边 Ajax 一下。然后呢，第一个问题来了，以前 Vue2 时的数据是放在 data() 里面的，Vite 给我的模版里面也确实有，那么我要做的就是在 Vue 组件挂载之前把 url 从后端那里拿到然后放到 data() 里就好了。</p>
+<p>为了满足这个时机要求应该使用生命周期，放在 Vue2 我一般会放在 mounted 或者之前，但在这里使用的时候我去查了 Vue3 的 API，发现这里发生了改变</p>
+<img src="https://i.loli.net/2021/05/22/oKu1LdEXTV3Qtj5.png" srcset="/img/loading.gif" lazyload>
+<p>而且这些函数还得放 setup() 里面</p>
+<img src="https://i.loli.net/2021/05/22/27aJVEjAlhM6zKe.png" srcset="/img/loading.gif" lazyload>
+<p>这个还好说，用就是了，但是呢，我熟练的开始 this 然后惊人地发现得把 this 一层层往 setup() 里面引才能拿到最外面的 data 里面的数据容器，然后抱着疑惑的态度做了后震惊地发现 this 居然没有被定义（老人地铁手机.jpg），赶紧看了看文档</p>
+<img src="https://i.loli.net/2021/05/22/VRfIyPbwhUDJpKF.png" srcset="/img/loading.gif" lazyload>
+<p>啊这。。。那咋办呢，又查文档发现 setup() 可以传俩参数，setup(props, context)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>  <span class="hljs-attr">props</span>: &#123;<br>    <span class="hljs-attr">title</span>: <span class="hljs-title class_">String</span><br>  &#125;,<br>  <span class="hljs-title function_">setup</span>(<span class="hljs-params">props, context</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(props.<span class="hljs-property">title</span>)<br><br>    <span class="hljs-comment">// Attribute (非响应式对象)</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(context.<span class="hljs-property">attrs</span>)<br><br>    <span class="hljs-comment">// 插槽 (非响应式对象)</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(context.<span class="hljs-property">slots</span>)<br><br>    <span class="hljs-comment">// 触发事件 (方法)</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(context.<span class="hljs-property">emit</span>)<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>我发现这里的 props 应该是和 Vue2 的 data 一样是可以被插值语句或者 v- 的语句拿到的，拿我是不是可以把 url 注到 props 里面呢，做了发现，不能 :cry:，props 里的数据只读。</p>
+<p>实在不行了，B 站里去找视频看，发现 Vue3 已经不把 data、methods 分开写了，setup() 里定义的变量也能直接被外界拿到 :cry:，那我直接放变量里不就行了。。。</p>
+<p>这个倒是解决了，但是呢，又有毛病了，我发现 ts 不能用 contact 连接数组，咋办呢，拿我用对象储存吧，对象也能 v-for。这下总算把数据渲染上去了。</p>
+<p>然而，问题又双叒叕来了，网页加载后，走马灯会中间会保持空白卡一会儿，然后才能正常运作，这我尝试了很多方法，没能解决，怀疑是 element-plus 的 bug。然后一气之下把 url 写成静态的，毫无毛病。。。</p>
+<p>但是呢，还残存了一些不足，加载图片速度不行，怀疑是图床不行，现在想想，为什么不直接把图片写成静态呢。</p>
+<h1>搭建 Web 后端项目</h1>
+<h2 id="Nodejs-express-搭建-Web-后端">Nodejs + express 搭建 Web 后端</h2>
+<p>Web 后端这边呢，还是用我熟悉的 nodejs 加上 express 框架，比起前端部分难为自己用 ts，果然还是 js 更加无拘无束。</p>
+<p>快速地 npm install express，因为需要解析 html 文件 send 到前端，所以需要 npm install art-template express-art-template，因为要解析前端请求体，所以要 npm install body-parser，后端使用的是 MongoDB（js 不香吗），为了更好的使用，我们采用 Mongoose 框架，npm install mongoose</p>
+<img src="https://i.loli.net/2021/05/24/JBNR9UilxPXezwg.png" srcset="/img/loading.gif" lazyload>
+<p>添加好请求头，做好跨域访问问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript">app.<span class="hljs-title function_">all</span>(<span class="hljs-string">&#x27;*&#x27;</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) &#123;<br>    res.<span class="hljs-title function_">header</span>(<span class="hljs-string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="hljs-string">&quot;*&quot;</span>)<br>    res.<span class="hljs-title function_">header</span>(<span class="hljs-string">&#x27;Access-Control-Allow-Headers&#x27;</span>, <span class="hljs-string">&#x27;Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild&#x27;</span>);<br>    res.<span class="hljs-title function_">header</span>(<span class="hljs-string">&quot;Access-Control-Allow-Methods&quot;</span>, <span class="hljs-string">&quot;PUT,POST,GET,DELETE,OPTIONS&quot;</span>)<br>    res.<span class="hljs-title function_">header</span>(<span class="hljs-string">&quot;X-Powered-By&quot;</span>, <span class="hljs-string">&#x27; 3.2.1&#x27;</span>)<br>    <span class="hljs-title function_">next</span>()<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>把监听放在 80 端口，基本的初始化就完成了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">app.<span class="hljs-title function_">listen</span>(<span class="hljs-number">80</span>, <span class="hljs-function">() =&gt;</span> &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Serve is on...&#x27;</span>)<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>然后连接数据库，这里之前踩过坑，在 mongoose.connect() 时要添加第二个参数 { useNewUrlParser: true, useUnifiedTopology: true }，通过将 useNewUrlParser 设置为 true 来避免 “不建议使用当前 URL 字符串解析器” 警告</p>
+<p>说道数据库就需要写一套 CRUD 来方便使用，目前只用到了 Create 和 Retrieve</p>
+<p>先说 Create，mongoose 操作的方法是先定义一个 Schema，形式类似 C 的结构体，这里的作用就像关系型数据库里的表（也是说 MongoDB 是最像关系型数据库的非关系型数据库的原因吧），这里定义的时候需要把 Schema 指向我们需要的 collection。然后使用 mongoose.model 在挂上这些 Schema，最后再对这些 model 进行 save 和 find 操作。</p>
+<p>值得注意的是，我们要将 储存、查询操作写成异步的方式，所以应该在查询函数中返回 Promise 函数，外部进行 .then 操作</p>
+<p>以上就完成了初始化和数据库处理，之后的任务就是根据需要开放各种各样的端口，也就是写 router，这里理论上应该把 router 单独放一文件中，然后引入，做的更模块化，这边项目比较小，所以先放一起。</p>
+<p>如果这些都做完，那一个简单的 Web 后端就搭建完成了（其实是在我所学范围内的东西全都用完了，叫啥来着，黔驴技穷？）。</p>
+<h2 id="用-Go-重构后端">用 Go 重构后端</h2>
+<p>为啥要搞这一档子事呢，前言也说了，目前呢，也是抱着多学点东西的目的在搞</p>
+<h3 id="学点-Go">学点 Go</h3>
+<p>从学校图书馆里借了四本书（其实只在看两本），学了大概一周，了解了个大概。这里只谈谈我觉得 Go 比较特殊的一些地方（相较我已经学过的一些编程语言，想到啥说啥）</p>
+<p>作为静态强类型的语言，Go 包含了丰富的数据类型，我们从 Go 的反射那里了解到有如下：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">type</span> Kind <span class="hljs-type">uint</span><br><span class="hljs-keyword">const</span> (<br>    Invalid Kind = <span class="hljs-literal">iota</span>  <span class="hljs-comment">// 非法类型</span><br>    Bool                 <span class="hljs-comment">// 布尔型</span><br>    Int                  <span class="hljs-comment">// 有符号整型</span><br>    Int8                 <span class="hljs-comment">// 有符号8位整型</span><br>    Int16                <span class="hljs-comment">// 有符号16位整型</span><br>    Int32                <span class="hljs-comment">// 有符号32位整型</span><br>    Int64                <span class="hljs-comment">// 有符号64位整型</span><br>    Uint                 <span class="hljs-comment">// 无符号整型</span><br>    Uint8                <span class="hljs-comment">// 无符号8位整型</span><br>    Uint16               <span class="hljs-comment">// 无符号16位整型</span><br>    Uint32               <span class="hljs-comment">// 无符号32位整型</span><br>    Uint64               <span class="hljs-comment">// 无符号64位整型</span><br>    Uintptr              <span class="hljs-comment">// 指针</span><br>    Float32              <span class="hljs-comment">// 单精度浮点数</span><br>    Float64              <span class="hljs-comment">// 双精度浮点数</span><br>    Complex64            <span class="hljs-comment">// 64位复数类型</span><br>    Complex128           <span class="hljs-comment">// 128位复数类型</span><br>    Array                <span class="hljs-comment">// 数组</span><br>    Chan                 <span class="hljs-comment">// 通道</span><br>    Func                 <span class="hljs-comment">// 函数</span><br>    Interface            <span class="hljs-comment">// 接口</span><br>    Map                  <span class="hljs-comment">// 映射</span><br>    Ptr                  <span class="hljs-comment">// 指针</span><br>    Slice                <span class="hljs-comment">// 切片</span><br>    String               <span class="hljs-comment">// 字符串</span><br>    Struct               <span class="hljs-comment">// 结构体</span><br>    UnsafePointer        <span class="hljs-comment">// 底层指针</span><br>)<br></code></pre></td></tr></table></figure>
+<p>我觉得 Go 比较好的一点就是可以在定义整型和浮点型的时候能够直接把位数写在类型上，如果不想写，Go 会智能地选择。其他的类型其实和 C 非常类似，比如结构体。</p>
+<p>当我们定义一个变量时可以使用 var，然后在变量名后加上数据类型，但是 Go 是比较智能的，你可以直接使用 := 让 Go 自己去判断拿到的数据类型（当然，是要赋初值的情况）</p>
+<p>注：其实 := 在别的地方我们也看到过，在 Python 中（3.8特性），它被称为「海象运算符」（确实挺可爱的），英文原文是 Assignment Expressions，使用它可以让 if 少写一行（当然，这只是个比较简单的例子，其实用处蛮多的）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># Before</span><br>age = <span class="hljs-number">20</span><br><span class="hljs-keyword">if</span> age &gt; <span class="hljs-number">18</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;已经成年了&quot;</span>)<br><span class="hljs-comment"># After</span><br><span class="hljs-keyword">if</span> (age:= <span class="hljs-number">20</span>) &gt; <span class="hljs-number">18</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;已经成年了&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>而在 Go 中，它被称为短变量声明符，这其实和 Python 的「海象运算符」并不是同一个玩意儿，毕竟 Python 作为面向对象的脚本语言，并不是强类型的（虽然确实可以添加强制类型的特性，就像 ts 对 js 那样的做法），你不可能让 Python 拿这玩意儿来进行数据类型判断（本身 = 就已经有这效果了）。</p>
+<p>Go 也有指针，和 C 很像，但个人认为比 C 更清晰，更不容易出问题。其实我在学 C 的时候，指针这块一直很晕，一直对指针这个东西的存在作用持有疑惑，也是在学 Go 的时候感觉对指针有了进一步的理解。</p>
+<p>Go 的代码风格感觉不太像 C 也感觉不太像 JavaScript 或 Python，它不会像 py 那样规定缩进，也不需要在语句结束的位置给上一个 ; ，条件语句不需要也不能用小括号把条件括起来，但它要求条件语句、循环这种需要大括号的语句需要把 { 和关键词放在同一行</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// Right</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">11</span> &#123;<br>  fmt.Println(<span class="hljs-string">&quot;a &gt; 11&quot;</span>)<br>&#125;<br><span class="hljs-comment">// Wrong</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">11</span><br>&#123;<br>  fmt.Println<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>Go 还有一个很有特色的地方在循环语句，基本的循环和其他语言类似（只是不加小括号），主要是遍历，Go 采用的是 for-range 的形式：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">for</span> index, val := <span class="hljs-keyword">range</span> str &#123;<br>  fmt.Printf(<span class="hljs-string">&quot;index=%d, val=%c\n&quot;</span>, index, val)<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>你可以直接拿到被便利对象元素的序号和该元素本身，在 js 中会用 for…in 和 for…of 区分（前者拿到的是序号，后者拿到的是元素本身），这点很人性化。</p>
+<p>Go 的比较像 Kotlin 或者说 TypeScript，要求参数类型，并且要求返回值类型，不同点在于，Kotlin 和 TypeScript 有泛型的概念，使得函数内的某些数据的类型保持一致，而 Go 中没有泛型，但是 Go 能够使用指针（指针函数、函数指针、指向函数的函数指针 .etc ）</p>
+<p>Go 的函数不具有默认参数和可选参数，要求我们传入的数据都是自定的切确定的，虽然少了灵活，但从一方面来讲，它也更安全（当然，C 也没有）</p>
+<p>关于 Go 的函数，还有一点是比较特别的，它通过函数名的首字母是否大写来判断外文件是否能访问，当使用大驼峰命名（首字母大写），外部文件可以访问，而小驼峰（首字母小写）则作为一个内部的方法</p>
+<p>最后，也是最神奇的一点，Go 的函数可以有多个返回值，最简单的，当我们在读取用户输入时</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs go">userInput, err := bufio.NewReader(os.Stdin).ReadString(<span class="hljs-string">&#x27;\n&#x27;</span>)<br></code></pre></td></tr></table></figure>
+<p>最后的 ReadString() 除了会返回一个 string 类型的数据外，还会返回一个 error</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Reader)</span></span> ReadString(delim <span class="hljs-type">byte</span>) (<span class="hljs-type">string</span>, <span class="hljs-type">error</span>) &#123;<br>    full, frag, n, err := b.collectFragments(delim)<br>    <span class="hljs-comment">// Allocate new buffer to hold the full pieces and the fragment.</span><br>    <span class="hljs-keyword">var</span> buf strings.Builder<br>    buf.Grow(n)<br>    <span class="hljs-comment">// Copy full pieces and fragment in.</span><br>    <span class="hljs-keyword">for</span> _, fb := <span class="hljs-keyword">range</span> full &#123;<br>        buf.Write(fb)<br>    &#125;<br>    buf.Write(frag)<br>    <span class="hljs-keyword">return</span> buf.String(), err<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>一般而言，我们会用一个变量 err 来装这个 error，但是必须对其处理，因为 Go 不能容忍有变量定义了却没有去用，当然你也可以使用下划线 _ 来忽略某返回值，但是多数情况下不被推荐</p>
+<p>以上就是目前在学习中了解到的一些比较有意思的东西，下面我们继续讲项目</p>
+<h3 id="重构">重构</h3>
+<p>第一次尝试用另一门语言去重构一个项目，因为项目比较简单，所以重构起来还算是比较容易的，更多的时间主要还是花在 debug 上</p>
+<p>重构的步骤也和之前搭项目的步骤差不多，这里我使用了 gin 框架来搭建项目，使用 mgo.v2 来进行 MongoDB 操作，总体体验还行</p>
+<p>这里就讲讲重构时的一些自我感觉比较好玩的地方或者 bug</p>
+<p>宏观上来看我写的项目，全都放在一个文件里编译，特别是 router，堆在一起，不够模块化。另外就是任然存在着代码的冗余——我只将数据库操作中的写入单独做了个方法，但并没有写查询，导致这块大量重复。另外就是 error 的处理，手段倒是挺多，可以 fmt.Println()，可以 log.Fatal()，在看一些教程的时候也有写到使用 panic()（让 go 感到「惊慌」），这个可能需要在学习一段时间，看点别人写的项目才能用得顺溜</p>
+<p>来聊聊 gin 和 mgo.v2 这俩东西吧</p>
+<blockquote>
+<p>Gin is a web framework written in Go (Golang). It features a martini-like API with much better performance, up to 40 times faster thanks to httprouter. —— From <a target="_blank" rel="noopener" href="https://gin-gonic.com/zh-cn/docs/introduction/">https://gin-gonic.com/zh-cn/docs/introduction/</a></p>
+</blockquote>
+<p>gin 作为一个 Web 后端框架，其实就相当于 express，不过更像 express 的其实是上面这段引用提到的 martini：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// example in gin</span><br><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;github.com/gin-gonic/gin&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    r := gin.Default()<br>    r.GET(<span class="hljs-string">&quot;/ping&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(c *gin.Context)</span></span> &#123;<br>        c.JSON(<span class="hljs-number">200</span>, gin.H&#123;<br>            <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;pong&quot;</span>,<br>        &#125;)<br>    &#125;)<br>    r.Run() <span class="hljs-comment">// listen and serve on 0.0.0.0:8080</span><br>&#125;<br><span class="hljs-comment">// example in martini</span><br><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;github.com/go-martini/martini&quot;</span><br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>  m := martini.Classic()<br>  m.Get(<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">()</span></span> <span class="hljs-type">string</span> &#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello world!&quot;</span><br>  &#125;)<br>  m.Run()<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>拿我为什么会选择 gin 呢，实际上我也是刚刚看了下 martini 才发现他更亲切 :joy:，不过体验上还是差不多的，主要就是在写路由上。</p>
+<p>gin 在获取前端发过来的数据和从后端往前端发数据的时候，对参数的格式要求很严格，表单用一种方法承接，json 用一种方法承接。说道这个 json，你还得写个 struct，然后通过 BindJSON() 方法把 json 数据拿到，至少现在用着感觉还是有那么一点别扭。</p>
+<blockquote>
+<p>mgo (pronounced as mango) is a MongoDB driver for the Go language that implements a rich and well tested selection of features under a very simple API following standard Go idioms. —— From <a target="_blank" rel="noopener" href="http://labix.org/mgo">http://labix.org/mgo</a></p>
+</blockquote>
+<p>mongodb 的驱动在 Go 的 pkg 网站上有好多，看的教材也没有什么推荐，然后查了一下了解到这个驱动比较老牌，但是没有更新了。看了一下，还能用。主要就是 api 不好找，全英文读着还是很难受的（别骂了别骂了，在学了），不过逻辑还是比较简单的，多调试一下用起来不是什么大问题</p>
+<p>基本完成了这个简单项目重构好了之后，直接 go build 一下，然后把编译好的 .exe 文件丢到服务器上就可以直接用了（服务器是 Windows 的，Linux 等学了之后再说），不用像 node 那样，还得装一个。</p>
+<p>哦，别忘了一点，就是在打包使用时，在创建路由之前，将模式设置为 Release，这样可以关掉不必要的 debug 信息，关于日志管理，还有一个框架叫 logrus，我没用上，感觉比较复杂，就在这提一嘴，不过感觉这个东西还是有必要的，可能在后期会搞上这么一个。</p>
+<h1>小结</h1>
+<p>这次写的还挺长的，就是写的有点乱七八糟的，不过挺随心的，真的就想到啥写点啥，不过应该预期想写的都写上了，还算不错。项目还有点东西要做，下一阶段再做总结。</p>
+<p>最后推荐一本 go 语言教材，《Head First Go 语言程序设计》—— [美] Jay McGavren。我很喜欢里面的箭头。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/" class="category-chain-item">编程开发</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Go/">#Go</a>
+      
+        <a href="/tags/Vue3/">#Vue3</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>重拾前端+后段重构</div>
+      <div>https://akashiya-chime.github.io/2021/05/26/重拾前端+后端重构/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>AkashiyaChime</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2021年5月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/08/19/Mirai-js%E4%BD%BF%E7%94%A8/" title="Mirai-js使用">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Mirai-js使用</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/04/02/Wox%E4%B8%8EuTools%E5%AF%B9%E6%AF%94/" title="Wox与uTools对比">
+                        <span class="hidden-mobile">Wox与uTools对比</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      <div>How are you today?</div>
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
