@@ -16,16 +16,16 @@
   <meta name="author" content="AkashiyaChime">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端   前言 之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，">
+    <meta name="description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重拾前端+后段重构">
 <meta property="og:url" content="https://akashiya-chime.github.io/2021/05/26/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF+%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/index.html">
 <meta property="og:site_name" content="AkashiyaChime">
-<meta property="og:description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端   前言 之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，">
+<meta property="og:description" content="本文包含并不限于以下内容：   拿到 ECS 搞到域名后进行域名备案   Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目   nodejs + express 搭建后端后使用 Go 重构后端">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://akashiya-chime.github.io/img/front-back.jpg">
 <meta property="article:published_time" content="2021-05-26T02:00:00.000Z">
-<meta property="article:modified_time" content="2022-12-30T06:36:27.241Z">
+<meta property="article:modified_time" content="2023-01-03T12:54:59.670Z">
 <meta property="article:author" content="AkashiyaChime">
 <meta property="article:tag" content="Go">
 <meta property="article:tag" content="Vue3">
@@ -173,6 +173,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -295,6 +307,7 @@
 <p>nodejs + express 搭建后端后使用 Go 重构后端</p>
 </li>
 </ul>
+<span id="more"></span>
 <h1>前言</h1>
 <p>之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，兴趣上来了，开始尝试用新生态借着服务器好好做一个前端项目，又拿 node 做了后端，5月过半，高数的复习陷入了一种莫名的疲软，感觉一直找不到做题的感觉，学到重积分，但题一直没法向前做着走，就准备搞点别的东西让自己缓缓（然而要准备开始复习专业课了，难受）。Golang，或者叫 Go 吧，Google 里的人开发的，静态强类型，编译型，很像 C，但比 C 安全、好用，天生支持高并发，用过的都说香（所以为什么函数不支持可选参数和默认参数）。所以拿来做后端 Web 服务针不戳，试试。</p>
 <h1>域名备案</h1>

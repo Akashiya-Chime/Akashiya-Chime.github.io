@@ -16,24 +16,24 @@
   <meta name="author" content="AkashiyaChime">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」 个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖">
+    <meta name="description" content="主要是讲一下使用 Hexo 作为工具，并使用 Github pages 作为部署方案的个人静态 Blog 搭建的大致流程。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wox与uTools对比">
-<meta property="og:url" content="https://akashiya-chime.github.io/2021/04/02/Wox%E4%B8%8EuTools%E5%AF%B9%E6%AF%94/index.html">
+<meta property="og:title" content="Blog 搭建参考">
+<meta property="og:url" content="https://akashiya-chime.github.io/2023/01/03/Blog%20%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/index.html">
 <meta property="og:site_name" content="AkashiyaChime">
-<meta property="og:description" content="最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」 个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖">
+<meta property="og:description" content="主要是讲一下使用 Hexo 作为工具，并使用 Github pages 作为部署方案的个人静态 Blog 搭建的大致流程。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://akashiya-chime.github.io/img/wox-utools.png">
-<meta property="article:published_time" content="2021-04-02T02:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-03T12:55:35.177Z">
+<meta property="og:image" content="https://akashiya-chime.github.io/img/Blog.png">
+<meta property="article:published_time" content="2023-01-03T12:39:00.000Z">
+<meta property="article:modified_time" content="2023-01-03T15:48:59.778Z">
 <meta property="article:author" content="AkashiyaChime">
-<meta property="article:tag" content="software">
+<meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://akashiya-chime.github.io/img/wox-utools.png">
+<meta name="twitter:image" content="https://akashiya-chime.github.io/img/Blog.png">
   
   
   
-  <title>Wox与uTools对比 - AkashiyaChime</title>
+  <title>Blog 搭建参考 - AkashiyaChime</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Wox与uTools对比"></span>
+            <span id="subtitle" data-typed-text="Blog 搭建参考"></span>
           
         </div>
 
@@ -224,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2021-04-02 10:00" pubdate>
-          2021年4月2日 上午
+        <time datetime="2023-01-03 20:39" pubdate>
+          2023年1月3日 晚上
         </time>
       </span>
     
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          2.5k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          18 分钟
+          22 分钟
         
       </span>
     
@@ -289,101 +289,75 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Wox与uTools对比</h1>
+            <h1 style="display: none">Blog 搭建参考</h1>
             
             
               <div class="markdown-body">
                 
-                <p>最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」</p>
-<p>个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。</p>
+                <p>主要是讲一下使用 Hexo 作为工具，并使用 Github pages 作为部署方案的个人静态 Blog 搭建的大致流程。</p>
 <span id="more"></span>
-<img src="https://i.loli.net/2021/04/02/Fh3EeV5HrzgjLKc.png" srcset="/img/loading.gif" lazyload>
-<h1>获取途径</h1>
-<blockquote>
-<p>官网：<br>
-wox：<a target="_blank" rel="noopener" href="http://www.wox.one/">http://www.wox.one/</a><br>
-utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.tools/</a></p>
-</blockquote>
-<h1>软件的一些信息</h1>
-<h2 id="拿来对比的版本">拿来对比的版本</h2>
-<ul>
-<li>Wox：1.4.1196（本体开源）</li>
-<li>uTools：1.3.5（本体非开源）</li>
-</ul>
-<h2 id="更新情况">更新情况</h2>
-<ul>
-<li>Wox：最近一次更新在 2020.5.26，目前可能已无更新，Github 里躺了接近 600 条 issue（598 Open，2369 Closed）</li>
-<li>uTools：最近一次更新在 2020.9.9（日期来自社区），更新速度还行，官方建了社区，用户在社区与开发者交流，提供版本bug、功能需求以及插件发布，官方回复速度可观</li>
-</ul>
-<h1>比较</h1>
-<h2 id="软件大小">软件大小</h2>
-<ul>
-<li>
-<p>Wox：安装包 8.87 MB，安装后占用空间约 28 MB</p>
-</li>
-<li>
-<p>uTools：安装包 50.4 MB，安装后占用空间约 169 MB</p>
-</li>
-</ul>
-<h2 id="使用时内存占用情况">使用时内存占用情况</h2>
-<ul>
-<li>Wox：40-70 MB 左右（跳动较大，有时甚至上百）</li>
-<li>uTools：30 MB 左右（跳动不大）</li>
-</ul>
-<h2 id="插件">插件</h2>
-<ul>
-<li>Wox：目前官方有289个插件，大部分来自外国开发者，实用的也就那几个，因为软件本身开源，所以插件开发上传是允许的。通过 wpm install 来安装：</li>
-</ul>
-<img src="https://i.loli.net/2021/04/02/j9aCJqRHVsD8Ab6.png" srcset="/img/loading.gif" lazyload>
-<ul>
-<li>uTools：同样上百个，且几乎所有（我看到的都是）国内开发者开发的，极强的可读性，但实用的也确实只有那几个，好的是，官方开放了插件开发和上传途径，且文档中有比较详细的说明。通过自带的 UI 来安装：</li>
-</ul>
-<img src="https://i.loli.net/2021/04/02/aigpz5moSvX2Zn8.png" srcset="/img/loading.gif" lazyload>
-<p>在插件这一块，是两个软件核心的东西，但对于个人来说千差万别，每个人对插件的需要和理解是不同的。</p>
-<p>这里着重说最常用的 everything 的插件。</p>
-<p>两者都需要 everything client，everything 确实是一款非常不错的软件，对于文件搜索的速度快得飞起，但是会有一个问题，那就是 everything 的内存占用，动辄上百居高不下的内存占用，成为我开机内存占用最高的应用，但是如果不启动，wox 和 utools 都无法使用 everything 的插件功能</p>
-<img src="https://i.loli.net/2021/04/02/AP7LvOslJUjFMeT.png" srcset="/img/loading.gif" lazyload>
-<p>这里提供一个 everything 的下载途径：<a target="_blank" rel="noopener" href="https://www.voidtools.com/zh-cn/downloads/">https://www.voidtools.com/zh-cn/downloads/</a></p>
-<p><strong>两者的区别体现在下面这几点：</strong></p>
-<ul>
-<li>uTools 要使用 everything 插件（其实是所有插件都要）必须先键入关键词，而且不提供关键词的修改。相比较起来 Wox 就好了很多，wox 有关键词 *，可以不用输入关键词就可以进行搜索，而且，插件的关键词可以修改。</li>
-</ul>
-<img src="https://i.loli.net/2021/04/02/JrZnzIikagPwjft.png" srcset="/img/loading.gif" lazyload>
-<img src="https://i.loli.net/2021/04/02/t2g6LiNWzPUE8AO.png" srcset="/img/loading.gif" lazyload>
-<img src="https://i.loli.net/2021/04/02/vNTQqEudChoGI1m.png" srcset="/img/loading.gif" lazyload>
-<ul>
-<li>uTools 的搜索自带了文件类型分类以及预览模式，分类思想是好的，预览也对图片以及一些文字展示有好处，但是做为我个人使用的习惯，会用这种方式去打开某些常用的快捷方式，但是 uTools 并不配备搜索出的选项置顶的功能，让我很烦恼，甚至没有配置过滤选项还找不到快捷方式，而且过滤规则是值得研究的，有一定的学习成本。其他的一些常用功能（比如打开所在文件夹，拷贝，拷贝路径）两者都有，另外，Wox 还能以管理员身份运行</li>
-</ul>
-<img src="https://i.loli.net/2021/04/02/BcnkQFugmZjRiEG.png" srcset="/img/loading.gif" lazyload>
-<h2 id="外观">外观</h2>
-<p>个人比较追求简约，Wox 提供自由的配色，对半透明的表现也非常令人满意，但是 uTools 就相对贫瘠了，本身只支持明亮与暗色两种主题，也只有修改透明度一个「效果不好」的滑条（透明会看不清文字）</p>
-<img src="https://i.loli.net/2021/04/02/aM3AgIm24BlYDpX.png" srcset="/img/loading.gif" lazyload>
-<img src="https://i.loli.net/2021/04/02/VK82B9Zyuvi4cOf.png" srcset="/img/loading.gif" lazyload>
-<h2 id="一些其他问题">一些其他问题</h2>
-<ul>
-<li>
-<p>收费：Wox 开源完全免费，uTools 开通会员会有云端数据备份（虽然感觉用不到，但是重装系统多了有点心虚）</p>
-</li>
-<li>
-<p>平台问题：Wox 似乎只能 Windows，uTools 支持 Windows，Mac，Linux</p>
-</li>
-<li>
-<p>文档问题：Wox 无，uTools 有比较完备（长）的介绍使用以及插件开发的文档（关于这点，文档是开发软件的一个优秀素质，但是从另一个方面来说，也体现了学习成本的区别，我 Wox 大多数功能用用就知道了，但 uTools 功能比较繁多，而且就连基础的一些功能也需要学习一下才能掌握，而且不保证记得住）</p>
-</li>
-<li>
-<p>uTools 有个鼠标中键的扩展功能，似乎可以语音输入，没怎么用（还是那句话，需要学），官方图：</p>
-</li>
-</ul>
-<img src="https://i.loli.net/2021/04/02/ply7gnoaf5sLV3k.png" srcset="/img/loading.gif" lazyload>
-<ul>
-<li>Wox 因为具有全局插件的概念，所以一些常用的插件可以直接用，识别性也很好（比如计算器，复杂加减乘除用起来很爽，又比如打开 URL 等等）</li>
-</ul>
-<h1>结论</h1>
-<p>结论就是适合自己的就是好用的，uTools 确实好用，但对我的一些依赖性功能，他比较「慢」，要么是需要花时间配置或学习，要么是使用的步骤繁琐，但是他氛围好的社区以及插件发布更新是非常香的，很多插件确实吸引我的眼球，也许几个版本后，我也会放下 Wox 用上 uTools（因为实在是太香了）。</p>
-<p>最后，支持国产软件发展。</p>
-<div class="note note-primary">
-            <p>2022年12月30日注：现在已经从wox切到utools了，utools优于其良好的更新以及广大的社区，现在已经发展地很强大很好用了，修了很多以前的恶性bug，综合体验上来讲，我认为utools已经胜过wox了。</p>
+<h1>前言</h1>
+<p>Blog 这个东西，怎么说呢，写到现在，感觉最大的用处就是拿来总结一些东西。就像笔记，为了让自己忘了的时候回来翻一翻（我装 Arch 那篇确实是翻了很多遍。。。）。但是呢理想中的用处还是想能够去帮助一部分人，虽然我现目前能写出的东西并不算高深，但确实是自己踩了不少坑总结下来的个人经验，想来或许能在别人遇到相同问题时能够有抛砖引玉的作用。</p>
+<p>说到 Blog 搭建，其实工具还蛮多的。我最开始使用的是 <a target="_blank" rel="noopener" href="https://gridea.dev/">Gridea</a>：<br>
+<a href="https://smms.app/image/kear27imDXKyGHt" target="_blank"><img src="https://s2.loli.net/2023/01/03/kear27imDXKyGHt.png" srcset="/img/loading.gif" lazyload /></a><br>
+它好处是用起来比较的简单，集成度比较的高，配置好后点点点就能把 Blog 发布出去。但是后来由于国内访问 Github 速度上的诟病，同步半天同步不上让我选择了放弃。之后就转到了体系上更大社区更广的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，然后就一种使用到现在。其实还有很多，诸如 <a target="_blank" rel="noopener" href="https://www.jekyll.com.cn/">Jekyll </a>（拿 Ruby 写的）、<a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>（拿 Go 写的）、<a target="_blank" rel="noopener" href="http://caibaojian.com/vuepress/">VuePress</a>（Vue 生态中的一员）等等，前段时间还看到个建站工具叫 <a target="_blank" rel="noopener" href="https://halo.run/">halo</a>（拿 Java 写的），也是可以拿来搭 Blog 站点的。</p>
+<p>这次还是主要讲 Hexo，我使用的主题是 <a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">Fluid</a>，然后丢到白嫖来的 github pages 上就成了现在看到的样子，其实步骤还蛮简单的。</p>
+<h1>准备工作</h1>
+<p>实际上就只是装个 <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a>，下载个长期维护版安装一路下一步就完事。你说想自定义一下安装位置其实也行，但其实 node 使用得当也不是很占地方。</p>
+<p>哦，默认你是有 <a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a> 的，没有的话装一个。</p>
+<h1>搭建</h1>
+<h2 id="装-Hexo">装 Hexo</h2>
+<p>官网上其实有很明确是步骤，你可以直接装个全局的脚手架：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install hexo-cli -g</span><br></code></pre></td></tr></table></figure>
+<p>进阶一点的话你可以装局部的，甚至不使用npm，使用yarn、npx或者pnpm也是可以的，这里就不多说了。</p>
+<h2 id="初始化">初始化</h2>
+<p>使用刚装的 hexo 的脚手架新建一个 blog 项目</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo init &lt;name&gt;</span><br></code></pre></td></tr></table></figure>
+<p>这里的 <code>&lt;name&gt;</code> 就是项目的名字，随便取一个。<br>
+然后进入到项目文件夹下，先装一下依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install</span><br></code></pre></td></tr></table></figure>
+<p>这个时候基本的项目就已经搭好了，你可以用一下命令开启一个本地的服务器查看效果：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo server</span><br></code></pre></td></tr></table></figure>
+<h2 id="主题">主题</h2>
+<p>你可以在 hexo 的主题页面中寻找自己喜欢的主题样式，或者直接上 github 搜索也是可行的，这里以 fluid 为例讲一下一般步骤。</p>
+<p>一般来说装 hexo 主题有两种方式：</p>
+<ol>
+<li>git clone 仓库到项目的 themes 文件夹下</li>
+<li>使用 npm 作为依赖下载</li>
+</ol>
+<p>fluid 推荐 hexo 5.0.0 版本以上用户使用 npm 直接安装，所以：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install --save hexo-theme-fluid</span><br></code></pre></td></tr></table></figure>
+<p>然后到 <code>node_modules</code> 文件夹下找到 <code>hexo-theme-fluid</code>，把 <code>_config.yml</code> 复制到最外面的项目文件夹（项目根目录）下，重命名为 <code>_config.fluid.yml</code>。<br>
+再然后修改项目根目录下的 <code>_config.yml</code> 中的 <code>theme: fluid</code>，<code>language: zh-CN</code>。<br>
+由于该主题有个「关于」页，所以为了展示完全，需要新建一个 about 页：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo new page about</span><br></code></pre></td></tr></table></figure>
+<p>然后修改  <code>/source/about/index.md</code>：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: about<br><span class="hljs-section">layout: about</span><br><span class="hljs-section">---</span><br><br>这里写关于页的正文，支持 Markdown, HTML<br></code></pre></td></tr></table></figure>
+<p>关于主题细节方面的配置这里就不赘述了，<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">官网文档</a>写的非常丰富</p>
+<h1>部署</h1>
+<p>本篇主要讲如何使用 hexo 的一键部署功能将项目部署到 github pages</p>
+<p>首先你得有个 github 账号，这里默认你有了，如果没有就注册一个。</p>
+<p>新建一个仓库，仓库名为 <code>你的用户名.github.io</code> ，进入仓库， 到 <code>Settings -&gt; Pages</code> 中将 github pages 启用。</p>
+<p>然后到项目中修改 <code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;repository&gt;</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br>  <span class="hljs-attr">message:</span> <span class="hljs-string">&quot;Site updated: <span class="hljs-template-variable">&#123;&#123; now(&#x27;YYYY-MM-DD HH:mm:ss&#x27;) &#125;&#125;</span>)&quot;</span><br></code></pre></td></tr></table></figure>
+<p>这里的 <code>&lt;repository&gt;</code> 就是你仓库的地址</p>
+<p>之后你就可以尝试部署：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure>
+<div class="note note-warning">
+            <ol><li>如果遇到说找不到你 git 的问题：<br><a href="https://smms.app/image/47WYEz2nim8CKXq" target="_blank"><img src="https://s2.loli.net/2023/01/03/47WYEz2nim8CKXq.png" srcset="/img/loading.gif" lazyload /></a><br>可以</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><ol start="2"><li>如果遇到 git 使用密码登录失败的问题<br><a href="https://smms.app/image/D3OVWgqn1adhNjE" target="_blank"><img src="https://s2.loli.net/2023/01/03/D3OVWgqn1adhNjE.png" srcset="/img/loading.gif" lazyload /></a><br>这是因为 github 在 2021 年改了政策，不让用用户名密码登录了，一种解决办法是使用 token，可以参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/465182461"><strong>这篇文章</strong></a></li></ol>
           </div>
+<p>如果做完了以上步骤，那么一个基本的 Blog 站点搭建就算完成了，下面来说一说写 Blog 时的一些问题和技巧。</p>
+<h1>写作方面的问题</h1>
+<p>一般来说文章的开头会有一些注释性的问题，例如本篇：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: Blog 搭建参考<br>tags: [Blog]<br>categories: [编程开发]<br>index<span class="hljs-emphasis">_img: /img/Blog.png</span><br><span class="hljs-emphasis">date: 2023-01-03 20:39:00</span><br><span class="hljs-emphasis">---</span><br></code></pre></td></tr></table></figure>
+<p>里面包含了文章的标题、标签、分类、封面图片以及发表日期，除了标题和日期以外的项目可能是与你的主题配置是相关联的，建议查看主题配置相关文档细致了解。</p>
+<p>然后就是有的主题应该支持概要的功能，能将文章中的前面一些文字显示在 Blog 主页中，此时可以使用 <code>&lt;!--more--&gt;</code> 来截断，以免显示内容过多<br>
+<a href="https://smms.app/image/DC4rEcbXLOvAS1B" target="_blank"><img src="https://s2.loli.net/2023/01/03/DC4rEcbXLOvAS1B.png" srcset="/img/loading.gif" lazyload /></a><br>
+文章内容就是纯纯的 markdown 了，没什么好说的，如果你在写作中涉及了 Latex 数学公式或者 Mermaid 流程图，可以查看 Hexo 相关渲染插件以及主题配置中是否有相关内容的设置。</p>
+<h1>后话</h1>
+<p>其实写 Blog 不仅是对自我知识的归纳总结，也是知识交流的一种途径。在当下国内如百度搜索一堆没用的信息以及类似 CSDN 这类站点大家互相抄来抄去，抄到最后排版尽失、要点难寻甚至不明所以要我掏钱要我关注的一种局面下，找到一篇真正能够解决问题的文章着实是有点难，这还怎么让我在写代码的时候 <code>Ctrl C</code> and <code>Ctrl V</code>（bushi）。</p>
+<p>所以我还是希望能有更多的人能够真正去写一些东西，分享出来，让我们不流失好的想法或者是可贵的经验。</p>
+
                 
               </div>
             
@@ -401,7 +375,7 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/" class="category-chain-item">应用系统</a>
+  <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/" class="category-chain-item">编程开发</a>
   
   
 
@@ -416,7 +390,7 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/software/">#software</a>
+        <a href="/tags/Blog/">#Blog</a>
       
     </div>
   
@@ -428,8 +402,8 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Wox与uTools对比</div>
-      <div>https://akashiya-chime.github.io/2021/04/02/Wox与uTools对比/</div>
+      <div>Blog 搭建参考</div>
+      <div>https://akashiya-chime.github.io/2023/01/03/Blog 搭建参考/</div>
     </div>
     <div class="license-meta">
       
@@ -441,7 +415,7 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2021年4月2日</div>
+          <div>2023年1月3日</div>
         </div>
       
       
@@ -473,18 +447,12 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/05/26/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF+%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/" title="重拾前端+后段重构">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">重拾前端+后段重构</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/03/27/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/" title="3月月末总结">
-                        <span class="hidden-mobile">3月月末总结</span>
+                      <a href="/2022/08/26/%E3%80%8C408%E3%80%8D%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/" title="「408」英文缩写索引">
+                        <span class="hidden-mobile">「408」英文缩写索引</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
