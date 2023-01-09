@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://akashiya-chime.github.io/img/front-back.jpg">
 <meta property="article:published_time" content="2021-05-26T02:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-03T12:54:59.670Z">
+<meta property="article:modified_time" content="2023-01-09T10:09:49.419Z">
 <meta property="article:author" content="AkashiyaChime">
 <meta property="article:tag" content="Go">
 <meta property="article:tag" content="Vue3">
@@ -308,12 +308,12 @@
 </li>
 </ul>
 <span id="more"></span>
-<h1>前言</h1>
+<h2 id="前言">前言</h2>
 <p>之前本来想写个4月总结的，但4月确实没啥写的，加上4月还算在认真学习，就咕了，4月底决定和室友合租一服务器，之后花了大半个月的时间搞域名备案，期间呢，兴趣上来了，开始尝试用新生态借着服务器好好做一个前端项目，又拿 node 做了后端，5月过半，高数的复习陷入了一种莫名的疲软，感觉一直找不到做题的感觉，学到重积分，但题一直没法向前做着走，就准备搞点别的东西让自己缓缓（然而要准备开始复习专业课了，难受）。Golang，或者叫 Go 吧，Google 里的人开发的，静态强类型，编译型，很像 C，但比 C 安全、好用，天生支持高并发，用过的都说香（所以为什么函数不支持可选参数和默认参数）。所以拿来做后端 Web 服务针不戳，试试。</p>
-<h1>域名备案</h1>
+<h2 id="域名备案">域名备案</h2>
 <p><em>这可真是个辛苦的差事，辛苦我室友了。</em></p>
 <p>我们在去听某人工智能讲座的时候就开始讨论取域名的事，这也不是件容易的事 :joy:，换来换去才把价格高、被占用、不「好看」的域名给避开。然后就是让人头大的域名备案了，不是亲身经历还真不敢信这东西这么复杂。因为是从阿里买的域名，通过阿里备案，先在阿里过个审，填各种表，把各种各样的个人信息填了个全，就生怕网警找不到你。他们处理了好几天（还算快吧），然后有专人给我们打电话，说他们那边完事了，已经把信息给管局（通信管理局）了，还得去管局短信验证，然后，好家伙，「12天左右回复」，正好又赶上五一假，拖了有半个月管局才给回复说过了，叫把备案号挂网站上，又说可能按地方网警要求还得去搞个公安备案，又是「把身上有几颗痔数清楚了填上去」（你别说，就我写此文的时候，还没拿到公安备案号）。总结来说，要想备案，做好被「扒光」的准备以及十足的耐心。</p>
-<h1>搭建前端项目</h1>
+<h2 id="搭建前端项目">搭建前端项目</h2>
 <p>Vue3 发布有一段时间了（春节左右发布），开始想接触接触了，加上 Vite2 发布了，看了一眼发现好像挺香的，这不又有服务器了嘛，怎么能没有想在浏览器地址栏敲上个 IP 就能看到点东西的冲动呢，所以就开始执行了。</p>
 <p>虽然不知道要想做成个啥样子，但出于学习的目的就都试试（淦，我软件工程学了个啥？），第一步，新建 .psd，还是线在 notion 上开了个页面放自己的 Todo List，自己觉得这个还是很有必要的，知道自己一向做这些东西的时间跨度比较大，怕忘了自己做过什么骚操作结果忘了出大事。</p>
 <p>然后就是喜闻乐见的新建文件夹开始疯狂 npm init @vitejs/app 选择 vue，选择 ts，写不来样式得找个组件库，嗯 npm install element -S ，哦淦，得是支持 Vue3 的版本，uninstall 了重新 npm install element-plus -S，那肯定得整个 Router，npm install vue-router@4，嗯，然后呢。。。</p>
@@ -337,8 +337,8 @@
 <p>这个倒是解决了，但是呢，又有毛病了，我发现 ts 不能用 contact 连接数组，咋办呢，拿我用对象储存吧，对象也能 v-for。这下总算把数据渲染上去了。</p>
 <p>然而，问题又双叒叕来了，网页加载后，走马灯会中间会保持空白卡一会儿，然后才能正常运作，这我尝试了很多方法，没能解决，怀疑是 element-plus 的 bug。然后一气之下把 url 写成静态的，毫无毛病。。。</p>
 <p>但是呢，还残存了一些不足，加载图片速度不行，怀疑是图床不行，现在想想，为什么不直接把图片写成静态呢。</p>
-<h1>搭建 Web 后端项目</h1>
-<h2 id="Nodejs-express-搭建-Web-后端">Nodejs + express 搭建 Web 后端</h2>
+<h2 id="搭建-Web-后端项目">搭建 Web 后端项目</h2>
+<h3 id="Nodejs-express-搭建-Web-后端">Nodejs + express 搭建 Web 后端</h3>
 <p>Web 后端这边呢，还是用我熟悉的 nodejs 加上 express 框架，比起前端部分难为自己用 ts，果然还是 js 更加无拘无束。</p>
 <p>快速地 npm install express，因为需要解析 html 文件 send 到前端，所以需要 npm install art-template express-art-template，因为要解析前端请求体，所以要 npm install body-parser，后端使用的是 MongoDB（js 不香吗），为了更好的使用，我们采用 Mongoose 框架，npm install mongoose</p>
 <img src="https://i.loli.net/2021/05/24/JBNR9UilxPXezwg.png" srcset="/img/loading.gif" lazyload>
@@ -352,9 +352,9 @@
 <p>值得注意的是，我们要将 储存、查询操作写成异步的方式，所以应该在查询函数中返回 Promise 函数，外部进行 .then 操作</p>
 <p>以上就完成了初始化和数据库处理，之后的任务就是根据需要开放各种各样的端口，也就是写 router，这里理论上应该把 router 单独放一文件中，然后引入，做的更模块化，这边项目比较小，所以先放一起。</p>
 <p>如果这些都做完，那一个简单的 Web 后端就搭建完成了（其实是在我所学范围内的东西全都用完了，叫啥来着，黔驴技穷？）。</p>
-<h2 id="用-Go-重构后端">用 Go 重构后端</h2>
+<h3 id="用-Go-重构后端">用 Go 重构后端</h3>
 <p>为啥要搞这一档子事呢，前言也说了，目前呢，也是抱着多学点东西的目的在搞</p>
-<h3 id="学点-Go">学点 Go</h3>
+<h4 id="学点-Go">学点 Go</h4>
 <p>从学校图书馆里借了四本书（其实只在看两本），学了大概一周，了解了个大概。这里只谈谈我觉得 Go 比较特殊的一些地方（相较我已经学过的一些编程语言，想到啥说啥）</p>
 <p>作为静态强类型的语言，Go 包含了丰富的数据类型，我们从 Go 的反射那里了解到有如下：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">type</span> Kind <span class="hljs-type">uint</span><br><span class="hljs-keyword">const</span> (<br>    Invalid Kind = <span class="hljs-literal">iota</span>  <span class="hljs-comment">// 非法类型</span><br>    Bool                 <span class="hljs-comment">// 布尔型</span><br>    Int                  <span class="hljs-comment">// 有符号整型</span><br>    Int8                 <span class="hljs-comment">// 有符号8位整型</span><br>    Int16                <span class="hljs-comment">// 有符号16位整型</span><br>    Int32                <span class="hljs-comment">// 有符号32位整型</span><br>    Int64                <span class="hljs-comment">// 有符号64位整型</span><br>    Uint                 <span class="hljs-comment">// 无符号整型</span><br>    Uint8                <span class="hljs-comment">// 无符号8位整型</span><br>    Uint16               <span class="hljs-comment">// 无符号16位整型</span><br>    Uint32               <span class="hljs-comment">// 无符号32位整型</span><br>    Uint64               <span class="hljs-comment">// 无符号64位整型</span><br>    Uintptr              <span class="hljs-comment">// 指针</span><br>    Float32              <span class="hljs-comment">// 单精度浮点数</span><br>    Float64              <span class="hljs-comment">// 双精度浮点数</span><br>    Complex64            <span class="hljs-comment">// 64位复数类型</span><br>    Complex128           <span class="hljs-comment">// 128位复数类型</span><br>    Array                <span class="hljs-comment">// 数组</span><br>    Chan                 <span class="hljs-comment">// 通道</span><br>    Func                 <span class="hljs-comment">// 函数</span><br>    Interface            <span class="hljs-comment">// 接口</span><br>    Map                  <span class="hljs-comment">// 映射</span><br>    Ptr                  <span class="hljs-comment">// 指针</span><br>    Slice                <span class="hljs-comment">// 切片</span><br>    String               <span class="hljs-comment">// 字符串</span><br>    Struct               <span class="hljs-comment">// 结构体</span><br>    UnsafePointer        <span class="hljs-comment">// 底层指针</span><br>)<br></code></pre></td></tr></table></figure>
@@ -378,7 +378,7 @@
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-params">(b *Reader)</span></span> ReadString(delim <span class="hljs-type">byte</span>) (<span class="hljs-type">string</span>, <span class="hljs-type">error</span>) &#123;<br>    full, frag, n, err := b.collectFragments(delim)<br>    <span class="hljs-comment">// Allocate new buffer to hold the full pieces and the fragment.</span><br>    <span class="hljs-keyword">var</span> buf strings.Builder<br>    buf.Grow(n)<br>    <span class="hljs-comment">// Copy full pieces and fragment in.</span><br>    <span class="hljs-keyword">for</span> _, fb := <span class="hljs-keyword">range</span> full &#123;<br>        buf.Write(fb)<br>    &#125;<br>    buf.Write(frag)<br>    <span class="hljs-keyword">return</span> buf.String(), err<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>一般而言，我们会用一个变量 err 来装这个 error，但是必须对其处理，因为 Go 不能容忍有变量定义了却没有去用，当然你也可以使用下划线 _ 来忽略某返回值，但是多数情况下不被推荐</p>
 <p>以上就是目前在学习中了解到的一些比较有意思的东西，下面我们继续讲项目</p>
-<h3 id="重构">重构</h3>
+<h4 id="重构">重构</h4>
 <p>第一次尝试用另一门语言去重构一个项目，因为项目比较简单，所以重构起来还算是比较容易的，更多的时间主要还是花在 debug 上</p>
 <p>重构的步骤也和之前搭项目的步骤差不多，这里我使用了 gin 框架来搭建项目，使用 mgo.v2 来进行 MongoDB 操作，总体体验还行</p>
 <p>这里就讲讲重构时的一些自我感觉比较好玩的地方或者 bug</p>
@@ -397,7 +397,7 @@
 <p>mongodb 的驱动在 Go 的 pkg 网站上有好多，看的教材也没有什么推荐，然后查了一下了解到这个驱动比较老牌，但是没有更新了。看了一下，还能用。主要就是 api 不好找，全英文读着还是很难受的（别骂了别骂了，在学了），不过逻辑还是比较简单的，多调试一下用起来不是什么大问题</p>
 <p>基本完成了这个简单项目重构好了之后，直接 go build 一下，然后把编译好的 .exe 文件丢到服务器上就可以直接用了（服务器是 Windows 的，Linux 等学了之后再说），不用像 node 那样，还得装一个。</p>
 <p>哦，别忘了一点，就是在打包使用时，在创建路由之前，将模式设置为 Release，这样可以关掉不必要的 debug 信息，关于日志管理，还有一个框架叫 logrus，我没用上，感觉比较复杂，就在这提一嘴，不过感觉这个东西还是有必要的，可能在后期会搞上这么一个。</p>
-<h1>小结</h1>
+<h2 id="小结">小结</h2>
 <p>这次写的还挺长的，就是写的有点乱七八糟的，不过挺随心的，真的就想到啥写点啥，不过应该预期想写的都写上了，还算不错。项目还有点东西要做，下一阶段再做总结。</p>
 <p>最后推荐一本 go 语言教材，《Head First Go 语言程序设计》—— [美] Jay McGavren。我很喜欢里面的箭头。</p>
 

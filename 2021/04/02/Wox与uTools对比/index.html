@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://akashiya-chime.github.io/img/wox-utools.png">
 <meta property="article:published_time" content="2021-04-02T02:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-09T04:55:17.066Z">
+<meta property="article:modified_time" content="2023-01-09T10:14:01.013Z">
 <meta property="article:author" content="AkashiyaChime">
 <meta property="article:tag" content="software">
 <meta name="twitter:card" content="summary_large_image">
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          2.1k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          19 分钟
+          18 分钟
         
       </span>
     
@@ -298,25 +298,25 @@
 <p>个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。</p>
 <span id="more"></span>
 <img src="https://i.loli.net/2021/04/02/Fh3EeV5HrzgjLKc.png" srcset="/img/loading.gif" lazyload>
-<h1>获取途径</h1>
+<h2 id="获取途径">获取途径</h2>
 <blockquote>
 <p>官网：<br>
 wox：<a target="_blank" rel="noopener" href="http://www.wox.one/">http://www.wox.one/</a><br>
 utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.tools/</a></p>
 </blockquote>
-<h1>软件的一些信息</h1>
-<h2 id="拿来对比的版本">拿来对比的版本</h2>
+<h2 id="软件的一些信息">软件的一些信息</h2>
+<h3 id="拿来对比的版本">拿来对比的版本</h3>
 <ul>
 <li>Wox：1.4.1196（本体开源）</li>
 <li>uTools：1.3.5（本体非开源）</li>
 </ul>
-<h2 id="更新情况">更新情况</h2>
+<h3 id="更新情况">更新情况</h3>
 <ul>
 <li>Wox：最近一次更新在 2020.5.26，目前可能已无更新，Github 里躺了接近 600 条 issue（598 Open，2369 Closed）</li>
 <li>uTools：最近一次更新在 2020.9.9（日期来自社区），更新速度还行，官方建了社区，用户在社区与开发者交流，提供版本bug、功能需求以及插件发布，官方回复速度可观</li>
 </ul>
-<h1>比较</h1>
-<h2 id="软件大小">软件大小</h2>
+<h2 id="比较">比较</h2>
+<h3 id="软件大小">软件大小</h3>
 <ul>
 <li>
 <p>Wox：安装包 8.87 MB，安装后占用空间约 28 MB</p>
@@ -325,12 +325,12 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
 <p>uTools：安装包 50.4 MB，安装后占用空间约 169 MB</p>
 </li>
 </ul>
-<h2 id="使用时内存占用情况">使用时内存占用情况</h2>
+<h3 id="使用时内存占用情况">使用时内存占用情况</h3>
 <ul>
 <li>Wox：40-70 MB 左右（跳动较大，有时甚至上百）</li>
 <li>uTools：30 MB 左右（跳动不大）</li>
 </ul>
-<h2 id="插件">插件</h2>
+<h3 id="插件">插件</h3>
 <ul>
 <li>Wox：目前官方有289个插件，大部分来自外国开发者，实用的也就那几个，因为软件本身开源，所以插件开发上传是允许的。通过 wpm install 来安装：</li>
 </ul>
@@ -355,11 +355,10 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
 <li>uTools 的搜索自带了文件类型分类以及预览模式，分类思想是好的，预览也对图片以及一些文字展示有好处，但是做为我个人使用的习惯，会用这种方式去打开某些常用的快捷方式，但是 uTools 并不配备搜索出的选项置顶的功能，让我很烦恼，甚至没有配置过滤选项还找不到快捷方式，而且过滤规则是值得研究的，有一定的学习成本。其他的一些常用功能（比如打开所在文件夹，拷贝，拷贝路径）两者都有，另外，Wox 还能以管理员身份运行</li>
 </ul>
 <img src="https://i.loli.net/2021/04/02/BcnkQFugmZjRiEG.png" srcset="/img/loading.gif" lazyload>
-<h2 id="module-exports-module-rules-打包其他资源（除了-html-js-css-资源以外的资源）-排除-exclude-html-js-css-loader-‘file-loader’-也是-hash-值（也可以用-options-处理一下）javascript">module.exports = {    module: {        rules: [            // 打包其他资源（除了 html/js/css 资源以外的资源）            {                // 排除                exclude: /.html|js|css$/,                loader: ‘file-loader’            }        ]    }}// 也是 hash 值（也可以用 options 处理一下）javascript</h2>
 <p>个人比较追求简约，Wox 提供自由的配色，对半透明的表现也非常令人满意，但是 uTools 就相对贫瘠了，本身只支持明亮与暗色两种主题，也只有修改透明度一个「效果不好」的滑条（透明会看不清文字）</p>
 <img src="https://i.loli.net/2021/04/02/aM3AgIm24BlYDpX.png" srcset="/img/loading.gif" lazyload>
 <img src="https://i.loli.net/2021/04/02/VK82B9Zyuvi4cOf.png" srcset="/img/loading.gif" lazyload>
-<h2 id="一些其他问题">一些其他问题</h2>
+<h3 id="一些其他问题">一些其他问题</h3>
 <ul>
 <li>
 <p>收费：Wox 开源完全免费，uTools 开通会员会有云端数据备份（虽然感觉用不到，但是重装系统多了有点心虚）</p>
@@ -378,7 +377,7 @@ utools：<a target="_blank" rel="noopener" href="https://u.tools/">https://u.too
 <ul>
 <li>Wox 因为具有全局插件的概念，所以一些常用的插件可以直接用，识别性也很好（比如计算器，复杂加减乘除用起来很爽，又比如打开 URL 等等）</li>
 </ul>
-<h1>结论</h1>
+<h2 id="结论">结论</h2>
 <p>结论就是适合自己的就是好用的，uTools 确实好用，但对我的一些依赖性功能，他比较「慢」，要么是需要花时间配置或学习，要么是使用的步骤繁琐，但是他氛围好的社区以及插件发布更新是非常香的，很多插件确实吸引我的眼球，也许几个版本后，我也会放下 Wox 用上 uTools（因为实在是太香了）。</p>
 <p>最后，支持国产软件发展。</p>
 <div class="note note-primary">

@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://akashiya-chime.github.io/img/vim.png">
 <meta property="article:published_time" content="2021-11-12T02:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-03T12:54:46.416Z">
+<meta property="article:modified_time" content="2023-01-09T10:08:31.472Z">
 <meta property="article:author" content="AkashiyaChime">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Vim">
@@ -297,8 +297,8 @@
                 
                 <p>Vim 作为一款高自由度的文本编辑器，广受众大佬的喜爱，然而高自由度另一方面带来的繁琐纷杂的配置劝退了 80% 的尝试者（像极了 DND 传教时玩家被 200 多页的玩家手册劝退）。但是呢，当你配置到位了，熟悉了 Vim 的快捷操作，它会回报你，它的开发效率可能会超过任何一个你使用过的 IDE。</p>
 <span id="more"></span>
-<h1>做一些说明</h1>
-<h2 id="使用-Vim-的缘由">使用 Vim 的缘由</h2>
+<h2 id="做一些说明">做一些说明</h2>
+<h3 id="使用-Vim-的缘由">使用 Vim 的缘由</h3>
 <p>其实我一向是 VSCode 的拥护者，VSCode 的确给了我很好的编程体验，但是呢，某些时候会让我感到难受。在写 Go 的时候，会去装巨硬官方提供的扩展:</p>
 <p><a href="https://smms.app/image/o59OnK8ipG6NWPF" target="_blank"><img src="https://s2.loli.net/2022/12/30/o59OnK8ipG6NWPF.png" srcset="/img/loading.gif" lazyload /></a></p>
 <p>但是，它会带来各种各样的问题，先是 gotools 安装失败，然后找个各种办法去解决，然后，最新的扩展跟新了改为 gopls（Go Language Server Protocol） 来处理 go，它要求你每个 module 需要在一个 VSCode 的 workplace 下，不然就会报以下的一个错：</p>
@@ -307,12 +307,12 @@
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;gopls&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;experimentalWorkspaceModule&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 <p>但是我设置之后会导致鼠标放置提示消失，总之就是非常难受。</p>
 <p>然后呢，想继续开发一下自己使用 Vim 的能力，于是就试试专门用 Vim 来做 Go 的 IDE 来试试。</p>
-<h2 id="关于配置">关于配置</h2>
+<h3 id="关于配置">关于配置</h3>
 <p><strong>本篇文章全部配置是我个人使用的配置，并没有涵盖所有的配置</strong></p>
 <p>我的配置已经上传到 <a target="_blank" rel="noopener" href="https://github.com/Akashiya-Chime/MyArchConf">Github</a>，不过没什么注释，下面我会进行比较详细的注解，尽量保证没一行配置都能知道干了什么</p>
 <p>每个代码段的第一行注释注明了所修改的文件以及文件在我的（ArchLinux）系统中的绝对位置，可以作为参考（其实可能也就只有 <code>.vimrc</code> （vim run commands，也有说 run control 的）文件需要修改）</p>
 <p>Windows 的用户，可以在 Vim 中使用 <code>:version</code> 查看系统或者用户 <code>.vimrc</code> 文件位置</p>
-<h2 id="基础操作">基础操作</h2>
+<h3 id="基础操作">基础操作</h3>
 <p>在写配置之前，需要一些基础的 Vim 操作知识</p>
 <ul>
 <li>
@@ -360,9 +360,9 @@
 </ul>
 </li>
 </ul>
-<h1>基础配置</h1>
+<h2 id="基础配置">基础配置</h2>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br><span class="hljs-comment">&quot; 打开高亮</span><br><span class="hljs-keyword">syntax</span> <span class="hljs-keyword">on</span><br><span class="hljs-comment">&quot; 打开行号</span><br><span class="hljs-keyword">set</span> <span class="hljs-keyword">number</span><br><span class="hljs-comment">&quot; 光标所在行高亮</span><br><span class="hljs-keyword">set</span> cursorline<br><span class="hljs-comment">&quot; 在底部显示键入的指令</span><br><span class="hljs-keyword">set</span> showcmd<br><span class="hljs-comment">&quot; 命令模式用 Tab 自动补全</span><br><span class="hljs-keyword">set</span> wildmenu<br><span class="hljs-comment">&quot; 高亮搜索匹配结果</span><br><span class="hljs-keyword">set</span> hlsearch<br><span class="hljs-comment">&quot; 去掉高亮（感觉有点玄学）</span><br>exec <span class="hljs-string">&quot;nohlsearch&quot;</span><br><span class="hljs-comment">&quot; 边输入边高亮</span><br><span class="hljs-keyword">set</span> incsearch<br><span class="hljs-comment">&quot; 忽略大小写</span><br><span class="hljs-keyword">set</span> ignorecase<br><span class="hljs-comment">&quot; 只能大小写（其实就是只对第一个字母大写的搜索词大小写敏感）</span><br><span class="hljs-keyword">set</span> smartcase<br><span class="hljs-comment">&quot; 自动缩进，回车后下一行的缩进与上一行的缩进保持一致</span><br><span class="hljs-keyword">set</span> autoindent<br><span class="hljs-comment">&quot; 智能缩进</span><br><span class="hljs-keyword">set</span> smartindent<br><span class="hljs-comment">&quot; 一个 Tab 缩进 4 个字符</span><br><span class="hljs-keyword">set</span> tabstop=<span class="hljs-number">4</span><br><span class="hljs-comment">&quot; 增加或取消一级缩进时的字符数，建议与缩进保持一致</span><br><span class="hljs-keyword">set</span> <span class="hljs-built_in">shiftwidth</span>=<span class="hljs-number">4</span><br><span class="hljs-comment">&quot; 由于 Tab 键在不同的编辑器缩进不一致，该设置自动将 Tab 转为空格</span><br><span class="hljs-keyword">set</span> expandtab<br><span class="hljs-comment">&quot; 智能缩进，根据文件其他地方的缩进来确定一个 Tab 多少缩进</span><br><span class="hljs-keyword">set</span> smarttab<br><span class="hljs-comment">&quot; Tab 转换为 2 个空格</span><br><span class="hljs-keyword">set</span> softtabstop=<span class="hljs-number">2</span><br><span class="hljs-comment">&quot; 支持鼠标（虽然但是，“我们是为了解放鼠标才来用 Vim 的！”）</span><br><span class="hljs-keyword">set</span> mouse=<span class="hljs-keyword">a</span><br><span class="hljs-comment">&quot; 状态栏现实光标当前位置（哪行哪列）</span><br><span class="hljs-keyword">set</span> ruler<br><span class="hljs-comment">&quot; 设置 utf-8 编码</span><br><span class="hljs-keyword">set</span> encoding=UTF-<span class="hljs-number">8</span><br><span class="hljs-comment">&quot; 是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示</span><br><span class="hljs-keyword">set</span> laststatus=<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
-<h1>进阶配置</h1>
+<h2 id="进阶配置">进阶配置</h2>
 <p>这个地方的配置是更加个性化的配置，我会讲解部分个性化配置的方法，并且给出我的部分个性化配置以做参考</p>
 <p>首先得搞清楚一些缩写或者字符串所代表的含义</p>
 <table>
@@ -456,9 +456,9 @@
 <p>这里再推荐一些我的配置：</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br><span class="hljs-comment">&quot; 使用 &lt;leader&gt;w 来完成保存</span><br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;leader&gt;</span><span class="hljs-keyword">w</span> :<span class="hljs-keyword">w</span><span class="hljs-symbol">&lt;CR&gt;</span><br><span class="hljs-comment">&quot; 使用 &lt;leader&gt;q 来完成退出</span><br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;leader&gt;</span>q :q<span class="hljs-symbol">&lt;CR&gt;</span><br><br><span class="hljs-comment">&quot; 使用 J 来实现光标向下跳转 5 行</span><br><span class="hljs-keyword">noremap</span> J <span class="hljs-number">5</span><span class="hljs-keyword">j</span><br><span class="hljs-comment">&quot; 使用 K 来实现光标向上跳转 5 行</span><br><span class="hljs-keyword">noremap</span> K <span class="hljs-number">5</span><span class="hljs-keyword">k</span><br><span class="hljs-comment">&quot; 使用 H 来实现光标到行首</span><br><span class="hljs-keyword">noremap</span> H ^<br><span class="hljs-comment">&quot; 使用 L 来实现光标到行末</span><br><span class="hljs-keyword">noremap</span> L $<br><span class="hljs-comment">&quot; 使用 &lt;leader&gt; 回车来关闭搜索时留下的高亮（这个要靠谱点）</span><br><span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;leader&gt;</span><span class="hljs-symbol">&lt;CR&gt;</span> :<span class="hljs-keyword">nohlsearch</span><span class="hljs-symbol">&lt;CR&gt;</span><br></code></pre></td></tr></table></figure>
 <p>以上，我关于原生的配置就了解的差不多了，这些都比较的简单，你可以查询 Vim 官方的相关文档找到更多更详尽的配置条目和更高级的配置方法。</p>
-<h1>插件</h1>
+<h2 id="插件">插件</h2>
 <p>Vim 的插件生态也是 Vim 兴盛的必不可少也是情理之中的特点，插件的存在让我们不用重复地造轮子，又因其高自由度和开源，你甚至可以在别人的轮子上修改出自己舒适的形状，他就像 VSCode 的扩展一样让人感到亲切。</p>
-<h2 id="插件管理器">插件管理器</h2>
+<h3 id="插件管理器">插件管理器</h3>
 <p>安装 Vim 插件的方式很多，最原生的方式就是将插件的仓库 clone 下来，然后将插件文件丢到 .vim 文件夹下。但是呢，这样不够优雅。为了方便日后的插件管理，我们应当想到并使用插件管理工具</p>
 <p>Vim 的插件管理器数不胜数，你甚至可以自己写一个，比较流行的，比如 Vundle，很多插件推荐或者教程都会使用 Vundle 的插件安装方式</p>
 <p>这里介绍另一个，也是我使用的，叫 <a target="_blank" rel="noopener" href="https://github.com/junegunn/vim-plug">vim-plug</a>，简洁，易用</p>
@@ -523,7 +523,7 @@
 </li>
 </ul>
 <p>那我们就来介绍一些好用的插件</p>
-<h2 id="vim-airline">vim-airline</h2>
+<h3 id="vim-airline">vim-airline</h3>
 <blockquote>
 <p>[vim-airline](<a target="_blank" rel="noopener" href="https://github.com/vim-airline/vim-airline">GitHub - vim-airline/vim-airline: lean &amp; mean status/tabline for vim that’s light as air</a>)</p>
 </blockquote>
@@ -535,7 +535,7 @@
 </blockquote>
 <p>我有如下配置：</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-comment">&quot; === vim-airline</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-keyword">set</span> laststatus=<span class="hljs-number">2</span>  <span class="hljs-comment">&quot; 永远显示状态栏</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_powerline_fonts</span> = <span class="hljs-number">1</span>  <span class="hljs-comment">&quot; 支持 powerline 字体</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#tabline#enabled = <span class="hljs-number">1</span> <span class="hljs-comment">&quot; 显示窗口tab和buffer</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_theme</span>=<span class="hljs-string">&#x27;dracula&#x27;</span><br><span class="hljs-keyword">if</span> !exists(<span class="hljs-string">&#x27;g:airline_symbols&#x27;</span>)<br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span> = &#123;&#125;<br><span class="hljs-keyword">endif</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_left_sep</span> = <span class="hljs-string">&#x27;▶&#x27;</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_left_alt_sep</span> = <span class="hljs-string">&#x27;❯&#x27;</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_right_sep</span> = <span class="hljs-string">&#x27;◀&#x27;</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_right_alt_sep</span> = <span class="hljs-string">&#x27;❮&#x27;</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span>.linenr = <span class="hljs-string">&#x27;¶&#x27;</span><br></code></pre></td></tr></table></figure>
-<h2 id="Dracula">Dracula</h2>
+<h3 id="Dracula">Dracula</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/dracula/vim">dracula/vim</a></p>
 </blockquote>
@@ -544,7 +544,7 @@
 <p>在配置文件 <code>~/.vimrc</code> 中添加</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br>color dracula<br></code></pre></td></tr></table></figure>
 <p>来设置为 dracula</p>
-<h2 id="NERDTree">NERDTree</h2>
+<h3 id="NERDTree">NERDTree</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/preservim/nerdtree">preservim/nerdtree</a></p>
 </blockquote>
@@ -563,24 +563,24 @@
 <ul>
 <li>注：你也许以后想装一个叫 vim-rainbow 的插件，这是一个彩色标注括号的插件，但它与 vim-devicon 不兼容，会导致文件夹被一对放括号包住，很难受。</li>
 </ul>
-<h2 id="indentLine">indentLine</h2>
+<h3 id="indentLine">indentLine</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/Yggdroot/indentLine">Yggdroot/indentLine</a></p>
 </blockquote>
 <p>缩进线插件，但似乎对 Go 的支持不是很好，效果如图：</p>
 <p><a href="https://smms.app/image/5Zap9Kz6ILbseWu" target="_blank"><img src="https://s2.loli.net/2022/12/30/5Zap9Kz6ILbseWu.png" srcset="/img/loading.gif" lazyload /></a></p>
-<h2 id="vim-startify">vim-startify</h2>
+<h3 id="vim-startify">vim-startify</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/mhinz/vim-startify">mhinz/vim-startify</a></p>
 </blockquote>
 <p>start screen，开始界面，如图：</p>
 <p><a href="https://smms.app/image/16BE2Y4imA7baOo" target="_blank"><img src="https://s2.loli.net/2022/12/30/16BE2Y4imA7baOo.png" srcset="/img/loading.gif" lazyload /></a></p>
-<h2 id="auto-pairs">auto-pairs</h2>
+<h3 id="auto-pairs">auto-pairs</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/jiangmiao/auto-pairs">jiangmiao/auto-pairs</a></p>
 </blockquote>
 <p>括号自动补全，简单，但是好用，而且智能</p>
-<h2 id="NERDCommenter">NERDCommenter</h2>
+<h3 id="NERDCommenter">NERDCommenter</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/preservim/nerdcommenter">preservim/nerdcommenter</a></p>
 </blockquote>
@@ -601,7 +601,7 @@
 </ul>
 <p>我有如下配置：</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-comment">&quot; === nerdcommenter</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-comment">&quot; Create default mappings</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDCreateDefaultMappings</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Add spaces after comment delimiters by default</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDSpaceDelims</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Use compact syntax for prettified multi-line comments</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDCompactSexyComs</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Align line-wise comment delimiters flush left instead of following code indentation</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDDefaultAlign</span> = <span class="hljs-string">&#x27;left&#x27;</span><br><span class="hljs-comment">&quot; Set a language to use its alternate delimiters by default</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDAltDelims_java</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Add your own custom formats or override the defaults</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDCustomDelimiters</span> = &#123; <span class="hljs-string">&#x27;c&#x27;</span>: &#123; <span class="hljs-string">&#x27;left&#x27;</span>: <span class="hljs-string">&#x27;/**&#x27;</span>,<span class="hljs-string">&#x27;right&#x27;</span>: <span class="hljs-string">&#x27;*/&#x27;</span> &#125; &#125;<br><span class="hljs-comment">&quot; Allow commenting and inverting empty lines (useful when commenting a region)</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDCommentEmptyLines</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Enable trimming of trailing whitespace when uncommenting</span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDTrimTrailingWhitespace</span> = <span class="hljs-number">1</span><br><span class="hljs-comment">&quot; Enable NERDCommenterToggle to check all selected lines is commented or not </span><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:NERDToggleCheckAllLines</span> = <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
-<h2 id="coc-nvim">coc.nvim</h2>
+<h3 id="coc-nvim">coc.nvim</h3>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/neoclide/coc.nvim">neoclide/coc.nvim</a></p>
 <p>Make your Vim/Neovim as smart as VSCode. (Conquer of Completion)</p>
@@ -611,7 +611,7 @@
 <p>也许，你得去看看它的 GitHub 仓库，进行更个性化的配置</p>
 <p>我的配置有：</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-comment">&quot; ~/.vimrc</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-comment">&quot; === coc.nvim</span><br><span class="hljs-comment">&quot; ===</span><br><span class="hljs-keyword">nnoremap</span> tt :CocCommand explorer<span class="hljs-symbol">&lt;CR&gt;</span><br><br><span class="hljs-keyword">let</span> <span class="hljs-variable">g:coc_global_extensions</span> = [<span class="hljs-string">&#x27;coc-json&#x27;</span>, <span class="hljs-string">&#x27;coc-vimlsp&#x27;</span>, <span class="hljs-string">&#x27;coc-go&#x27;</span>]<br><br><span class="hljs-keyword">set</span> encoding=utf-<span class="hljs-number">8</span><br><span class="hljs-keyword">set</span> updatetime=<span class="hljs-number">100</span><br><span class="hljs-keyword">set</span> shortmess+=<span class="hljs-keyword">c</span><br><br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> [g <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-diagnostic-<span class="hljs-keyword">prev</span>)<br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> ]g <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-diagnostic-<span class="hljs-keyword">next</span>)<br><br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> <span class="hljs-symbol">&lt;F12&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-definition)<br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> gy <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-<span class="hljs-built_in">type</span>-definition)<br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> gi <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-implementation)<br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;silent&gt;</span> <span class="hljs-keyword">gr</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-references)<br><br><span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;leader&gt;</span><span class="hljs-keyword">f</span>  <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-format-selected)<br><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;leader&gt;</span><span class="hljs-keyword">f</span>  <span class="hljs-symbol">&lt;Plug&gt;</span>(coc-format-selected)<br><br><span class="hljs-keyword">autocmd</span> CursorHold * <span class="hljs-keyword">silent</span> <span class="hljs-keyword">call</span> CocActionAsync(<span class="hljs-string">&#x27;highlight&#x27;</span>)<br><br><span class="hljs-keyword">if</span> <span class="hljs-built_in">has</span>(<span class="hljs-string">&quot;nvim-0.5.0&quot;</span>) || <span class="hljs-built_in">has</span>(<span class="hljs-string">&quot;patch-8.1.1564&quot;</span>)<br>  <span class="hljs-keyword">set</span> signcolumn=<span class="hljs-keyword">number</span><br><span class="hljs-keyword">else</span><br>  <span class="hljs-keyword">set</span> signcolumn=yes<br><span class="hljs-keyword">endif</span><br><br><span class="hljs-keyword">inoremap</span> <span class="hljs-symbol">&lt;silent&gt;</span><span class="hljs-symbol">&lt;expr&gt;</span> <span class="hljs-symbol">&lt;TAB&gt;</span><br>      \ <span class="hljs-built_in">pumvisible</span>() ? <span class="hljs-string">&quot;\&lt;C-n&gt;&quot;</span> :<br>      \ <span class="hljs-symbol">&lt;SID&gt;</span>check_back_space() ? <span class="hljs-string">&quot;\&lt;TAB&gt;&quot;</span> :<br>      \ coc#refresh()<br><span class="hljs-keyword">inoremap</span> <span class="hljs-symbol">&lt;expr&gt;</span><span class="hljs-symbol">&lt;S-TAB&gt;</span> <span class="hljs-built_in">pumvisible</span>() ? <span class="hljs-string">&quot;\&lt;C-p&gt;&quot;</span> : <span class="hljs-string">&quot;\&lt;C-h&gt;&quot;</span><br><br><span class="hljs-keyword">function!</span> <span class="hljs-title">s</span>:check_back_space<span class="hljs-params">()</span> abort<br>  <span class="hljs-keyword">let</span> <span class="hljs-keyword">col</span> = <span class="hljs-keyword">col</span>(<span class="hljs-string">&#x27;.&#x27;</span>) - <span class="hljs-number">1</span><br>  <span class="hljs-keyword">return</span> !col || <span class="hljs-built_in">getline</span>(<span class="hljs-string">&#x27;.&#x27;</span>)[<span class="hljs-keyword">col</span> - <span class="hljs-number">1</span>]  =~# <span class="hljs-string">&#x27;\s&#x27;</span><br><span class="hljs-keyword">endfunction</span><br></code></pre></td></tr></table></figure>
-<h1>参考</h1>
+<h2 id="参考">参考</h2>
 <p>追随大佬的步伐，这里推荐一 up 主，可以说我的 vim 启蒙是从他那里来的：</p>
 <p><a target="_blank" rel="noopener" href="https://space.bilibili.com/13081489">@TheCW</a></p>
 <ul>

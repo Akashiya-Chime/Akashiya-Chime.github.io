@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://akashiya-chime.github.io/img/archlinux.jpg">
 <meta property="article:published_time" content="2021-08-24T02:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-03T12:55:08.355Z">
+<meta property="article:modified_time" content="2023-01-09T10:11:18.461Z">
 <meta property="article:author" content="AkashiyaChime">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
@@ -298,12 +298,12 @@
 <p>主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）</p>
 <span id="more"></span>
 <p><a href="https://smms.app/image/rIHG7V4ZFjv9aPD" target="_blank"><img src="https://s2.loli.net/2022/12/30/rIHG7V4ZFjv9aPD.png" srcset="/img/loading.gif" lazyload /></a></p>
-<h1>参考</h1>
+<h2 id="参考">参考</h2>
 <p>因为是按着步骤装的，所以先把参考搬出来</p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Av411a7xe?share_source=copy_web">【超详细教程】Arch Linux真机安装教程 - 从命令行到图形界面 | 2021年3月</a></p>
 </blockquote>
-<h1>装前须知</h1>
+<h2 id="装前须知">装前须知</h2>
 <p>这个可能会成为一个坑，特别是不太了解操作系统或者相关东西的人（比如我），容易完了留麻烦，所以先说</p>
 <p>怎么回事呢，是这样的，我电脑的储存空间一直是我的心头病，我只有一个 256G 的 SSD，在 Windows 下划分成了 C 盘和 D 盘俩分区，然后一直把 100G 的 C 盘作为系统盘，每次重装系统都只会影响到这个盘的文件，而我的 D 盘得以保全。所以我准备这次也对我的 C 盘动手，想着这样能保全我 D 盘的重要文件。</p>
 <p>但是装系统的时候出现了两个问题：</p>
@@ -312,10 +312,10 @@
 <img src="https://s2.loli.net/2022/12/30/Sdv2kXG69Nr5E8q.png" srcset="/img/loading.gif" lazyload>
 <p>那有没有解决办法呢？目前我能找到的都需要格式化x，以宿舍不到 5MB 的网速把我这 100 来 G 的文件上传格式化后又下载下来可能不是一两天能解决的。</p>
 <p>所以装 Linux 前请一定注意以上问题。</p>
-<h2 id="我的硬件">我的硬件</h2>
+<h3 id="我的硬件">我的硬件</h3>
 <p><a href="https://smms.app/image/12CauNSfHW6iDvQ" target="_blank"><img src="https://s2.loli.net/2022/12/30/12CauNSfHW6iDvQ.png" srcset="/img/loading.gif" lazyload /></a></p>
 <p>常用操作：Ctrl + L 清屏，很好用</p>
-<h1>下镜像</h1>
+<h2 id="下镜像">下镜像</h2>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://archlinux.org/download/">https://archlinux.org/download/</a></p>
 </blockquote>
@@ -327,15 +327,15 @@
 <li>也可前往其他中国镜像地址下载</li>
 </ul>
 <p><a href="https://smms.app/image/fsz3FpBRJoqSM7X" target="_blank"><img src="https://s2.loli.net/2022/12/30/fsz3FpBRJoqSM7X.png" srcset="/img/loading.gif" lazyload /></a></p>
-<h1>制作启动盘</h1>
+<h2 id="制作启动盘">制作启动盘</h2>
 <p>有推荐使用 Rufus 我用了下，发现做出来的启动盘有点问题，我的电脑找不着，所以用的视频里提到的工具：Etcher</p>
 <p>工具使用比较简单，只需要注意推荐 8G 以上的 U 盘</p>
 <p>找到对应 U 盘（一定看清别搞错了）和镜像文件（.iso）然后一键完成</p>
-<h1>进入镜像</h1>
+<h2 id="进入镜像">进入镜像</h2>
 <p>打开百度，搜索自己机型对应进入 BIOS 的键（我的是 F2），关机，进入 BIOS</p>
 <p>Boot -&gt; Security Boot 更改为 Disabled</p>
 <p>打开百度，搜索自己机型对应进入启动项的键（我的是 F10），关机，进入启动项，找到 U 盘，进入镜像</p>
-<h1>连网</h1>
+<h2 id="连网">连网</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ iwctl<br></code></pre></td></tr></table></figure>
 <p>进入 iwd</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ device list<br></code></pre></td></tr></table></figure>
@@ -348,14 +348,14 @@
 <p>连接网络，根据提示输入密码（如果需要）</p>
 <p>Ctl+C 或者输入 exit 退出 iwd</p>
 <p>退出 iwd 后可使用 ping 来检查有无网络</p>
-<h1>验证启动模式</h1>
+<h2 id="验证启动模式">验证启动模式</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">ls</span> /sys/firmware/efi/efivars/<br></code></pre></td></tr></table></figure>
 <p>视频里讲说有很多如果里面有很多东西，那么说明有 UEFI，未考证准确性</p>
-<h1>同步时间</h1>
+<h2 id="同步时间">同步时间</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ timedatectl set-ntp <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 <p>可以通过以下方式查看</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ timedatectl status<br></code></pre></td></tr></table></figure>
-<h1>磁盘分区</h1>
+<h2 id="磁盘分区">磁盘分区</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ lsblk<br></code></pre></td></tr></table></figure>
 <p>列出块设备信息</p>
 <p>我就一个 256G 的 SSD，lsblk下显示的 nvme0n1（nvme应该是某接口规范的缩写）</p>
@@ -367,7 +367,7 @@
 <p>为了方便，以下以完全清除 nvme0n1 来进行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ cgdisk /dev/nvme0n1<br></code></pre></td></tr></table></figure>
 <p>进入这个 cgdisk 分区工具（当然也有别的，只是觉得这个好理解）</p>
-<h2 id="New">[ New ]</h2>
+<h3 id="New">[ New ]</h3>
 <p>具体操作可参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Av411a7xe?share_source=copy_web">推荐视频</a>，下表列出主要配置</p>
 <table>
 <thead>
@@ -437,17 +437,17 @@
 <div class="note note-primary">
             <p>2022年12月30日注：一定一定多给点，我本以为之前给得够多了，但是发现其实并不够。其实在Linux下可能就自己下的什么视频啥的占了点home的空间，各种奇奇怪怪的软件下下来是放root里的，所以还是给多点吧。</p>
           </div>
-<h2 id="Write">[ Write ]</h2>
+<h3 id="Write">[ Write ]</h3>
 <p>yes</p>
-<h2 id="Quit">[ Quit ]</h2>
-<h1>磁盘挂载</h1>
+<h3 id="Quit">[ Quit ]</h3>
+<h2 id="磁盘挂载">磁盘挂载</h2>
 <p>挂载前要先对分好的分区<strong>格式化</strong></p>
 <p>假设 n1p1 是你的 boot，n1p2 是 swap，n1p3 是 root，n1p4 是 home</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ mkfs.fat -F32 /dev/nvme0n1p1<br>$ mkswap /dev/nvme0n1p2<br>$ swapon /dev/nvme0n1p2<br>$ mkfs.ext4 /dev/nvme0n1p3<br>$ mkfs.ext4 /dev/nvme0n1p4<br></code></pre></td></tr></table></figure>
 <p>挂载</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ mount /dev/nvme0n1p3 /mnt<br>$ <span class="hljs-built_in">mkdir</span> /mnt/boot<br>$ mount /dev/nvme0n1p1 /mnt/boot<br>$ <span class="hljs-built_in">mkdir</span> /mnt/home<br>$ mount /dev/nvme0n1p4 /mnt/home<br></code></pre></td></tr></table></figure>
 <p>如果你不准备将 root 和 home 分开，那么就没有最后两步</p>
-<h1>修改 pacman 镜像</h1>
+<h2 id="修改-pacman-镜像">修改 pacman 镜像</h2>
 <p>文件编辑器可以选择 nano 或者 vim，看个人喜好，这里使用 vim</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vim /etc/pacman.d/mirrorlist<br></code></pre></td></tr></table></figure>
 <p>该文件存放了 pacman 的镜像地址，pacman 使用镜像的方式是从上到下，所以有的教程会让你把中国镜剪切到最前，这里不这样做，用一个更好的方法</p>
@@ -465,21 +465,21 @@
 <li><code>--save /etc/pacman.d/mirrorlist</code>：保存到该文件</li>
 <li>其实这里可以再加一个 <code>country China</code> 来选择中国源</li>
 </ul>
-<h1>安装系统及固件</h1>
+<h2 id="安装系统及固件">安装系统及固件</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacstrap -i /mnt linux linux-headers linux-firmware base base-devel vim intel-ucode<br></code></pre></td></tr></table></figure>
 <p>说明：</p>
 <ul>
 <li><code>vim</code> 也可换成 <code>nano</code> 或者一起装上</li>
 <li><code>intel-ucode</code> 取决于你的处理器类型，如果你是 AMD，那么 <code>amd-ucode</code></li>
 </ul>
-<h1>进入系统</h1>
+<h2 id="进入系统">进入系统</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab<br>$ arch-chroot /mnt<br></code></pre></td></tr></table></figure>
 <p>如果你发现终端行头变成了比如：<code>[root@archiso /]#</code>，那么说明你已经进入了系统</p>
 <p>进入系统第一件事，同步一下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -Syy<br></code></pre></td></tr></table></figure>
-<h2 id="然后配置系统时区">然后配置系统时区</h2>
+<h3 id="然后配置系统时区">然后配置系统时区</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">ln</span> -s /usr/share/zoneinfo/Asia/Shanghai &gt; /etc/localtime<br>$ hwclock --systohc<br></code></pre></td></tr></table></figure>
-<h2 id="然后语言配置">然后语言配置</h2>
+<h3 id="然后语言配置">然后语言配置</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vim /etc/locale.gen<br></code></pre></td></tr></table></figure>
 <p>进入该文件后，将 <code>en_US.UTF-8 UTF-</code>8 和 <code>zh_CN.UTF-8 UTF-8</code> 前面的 <code>#</code> 删掉（取消注释）</p>
 <p><code>:wq</code>退出</p>
@@ -492,16 +492,16 @@
 <p>写入以下内容：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">127.0.0.1    localhost<br>::1            localhost<br>127.0.1.1    arch-name.localdomain    arch-name<br></code></pre></td></tr></table></figure>
 <p><code>:wq</code> 退出</p>
-<h2 id="然后添加用户">然后添加用户</h2>
+<h3 id="然后添加用户">然后添加用户</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ passwd<br><span class="hljs-comment"># 两次输入密码</span><br>$ useradd -m -g <span class="hljs-built_in">users</span> -G wheel,storage,power -s /bin/bash archuser<br>$ passwd archuser<br><span class="hljs-comment"># 两次输入密码</span><br></code></pre></td></tr></table></figure>
 <p>这里的 <code>archuser</code> 是你的用户名，可以自行填写</p>
-<h2 id="修改-sudo-文件">修改 sudo 文件</h2>
+<h3 id="修改-sudo-文件">修改 sudo 文件</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ EDITOR=vim visudo<br></code></pre></td></tr></table></figure>
 <p>去掉 <code>Uncomment to allow members of group wheel to execute any command</code> <strong>下一行</strong> <code>%wheel ALL=(ALL) ALL</code> 前面的 #</p>
 <p><a href="https://smms.app/image/9wDc51X6fYEAlvh" target="_blank"><img src="https://s2.loli.net/2022/12/30/9wDc51X6fYEAlvh.png" srcset="/img/loading.gif" lazyload /></a></p>
 <p>再在文件最后添加 <code>Defaults rootpw</code></p>
 <p><code>:wq</code> 退出</p>
-<h1>安装启动器</h1>
+<h2 id="安装启动器">安装启动器</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ bootctl install<br>$ vim /boot/loader/entries/arch.conf<br></code></pre></td></tr></table></figure>
 <p>写入以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">title My Arch Linux<br>linux /vmlinuz-linux<br>initrd /intel-ucode.img<br>initrd /initramfs-linux.img<br></code></pre></td></tr></table></figure>
@@ -509,7 +509,7 @@
 <p><code>:wq</code> 退出</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;options root=PARTUUID=<span class="hljs-subst">$(blkid -s PARTUUID -o value /dev/nvme0n1p3)</span> rw&quot;</span> &gt;&gt; /boot/loader/entries/arch.conf<br></code></pre></td></tr></table></figure>
 <p>上面这个语句会帮你补充 arch.conf 内的最后一行</p>
-<h1>开启 32 位支持（可选）</h1>
+<h2 id="开启-32-位支持（可选）">开启 32 位支持（可选）</h2>
 <p>如果你没有 32 位应用支持需求，则直接下一步（我没有）</p>
 <div class="note note-primary">
             <p>2022年12月30日注：现在看来，还是有一些需求的，但是到时候开也没问题</p>
@@ -519,17 +519,17 @@
 <p><code>:wq</code> 退出</p>
 <p>然后同步一下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -Syy<br></code></pre></td></tr></table></figure>
-<h1>安装各种工具、驱动</h1>
-<h2 id="网络、声音、蓝牙、文件后台">网络、声音、蓝牙、文件后台</h2>
+<h2 id="安装各种工具、驱动">安装各种工具、驱动</h2>
+<h3 id="网络、声音、蓝牙、文件后台">网络、声音、蓝牙、文件后台</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -S networkmanager network-manager-applet dialog wpa_supplicant dhcpcd<br></code></pre></td></tr></table></figure>
 <p>启用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ systemctl <span class="hljs-built_in">enable</span> NetworkManager<br></code></pre></td></tr></table></figure>
 <p>继续</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -S mtools dosfstools  bluez bluez-utils cups xdg-utils xdg-user-dirs alsa-utils pulseaudio pulseaudio-bluetooth reflector openssh<br></code></pre></td></tr></table></figure>
-<h2 id="显卡">显卡</h2>
+<h3 id="显卡">显卡</h3>
 <p>这里以我的配置来（不开启 32 位支持，intel，NVIDIA），32 位及 AMD 相关请参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Av411a7xe?share_source=copy_web">推荐视频</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -S xf86-video-intel mesa libva-mesa-driver mesa-vdpau nvidia dkms libglvnd nvidia-utils opencl-nvidia nvidia-settings<br></code></pre></td></tr></table></figure>
-<h2 id="显卡驱动配置">显卡驱动配置</h2>
+<h3 id="显卡驱动配置">显卡驱动配置</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ vim /etc/mkinitcpio.conf<br></code></pre></td></tr></table></figure>
 <p>将 <code>MODULES=()</code> 修改为 <code>MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)</code>，顺序不能错</p>
 <p><code>:wq</code> 退出</p>
@@ -541,14 +541,14 @@
 <p>在 <code>options</code> 这一行的<strong>后面</strong>添加：<code>nvidia-drm.modeset=1</code></p>
 <p>如果你是 AMD，那么添加 <code>amdgpu.dmp=0 amdgpu.noretry=0</code></p>
 <p><code>:wq</code> 退出</p>
-<h1>安装图形界面（以 KDE 为例）</h1>
-<h2 id="装-xorg-窗口系统">装 xorg 窗口系统</h2>
+<h2 id="安装图形界面（以-KDE-为例）">安装图形界面（以 KDE 为例）</h2>
+<h3 id="装-xorg-窗口系统">装 xorg 窗口系统</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -S xorg konsole<br></code></pre></td></tr></table></figure>
 <p>视频里推荐装个 <code>xterm</code> 然后进了图形界面后又用 <code>xterm</code> 装了 <code>konsole</code>，那为什么不直接在这装 <code>konsole</code> 呢</p>
 <p>（一定要装一个终端，不论你是装 <code>xterm</code> 还是 <code>konsole</code>，不然进去发现没有，又得插 U 盘挂载进系统然后装，很麻烦）</p>
-<h2 id="装-KDE">装 KDE</h2>
+<h3 id="装-KDE">装 KDE</h3>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ pacman -S sddm plasma<br></code></pre></td></tr></table></figure>
-<h1>重启</h1>
+<h2 id="重启">重启</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">exit</span><br></code></pre></td></tr></table></figure>
 <p>退出系统</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ umount -R /mnt<br></code></pre></td></tr></table></figure>
@@ -557,7 +557,7 @@
 <p>重启</p>
 <p>输入密码，你就进入图形界面的桌面了</p>
 <p>至此，装系统到图形界面应该就算结束了，但为了接下来的使用，装一些基本的软件</p>
-<h1>装基本软件</h1>
+<h2 id="装基本软件">装基本软件</h2>
 <p>打开 konsole</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ sudo pacman -S neofetch dolphin firefox ark p7zip git wget kate bashtop<br></code></pre></td></tr></table></figure>
 <p><code>neofetch</code> 就是最开始我看系统和硬件信息的工具</p>
@@ -570,7 +570,7 @@
 <p><a href="https://smms.app/image/7nOzy4YueTBVabo" target="_blank"><img src="https://s2.loli.net/2022/12/30/7nOzy4YueTBVabo.png" srcset="/img/loading.gif" lazyload /></a></p>
 <p><code>bashtop</code> 是终端进程管理器</p>
 <p><a href="https://smms.app/image/gXJ5SPp9tW2Nmoi" target="_blank"><img src="https://s2.loli.net/2022/12/30/gXJ5SPp9tW2Nmoi.png" srcset="/img/loading.gif" lazyload /></a></p>
-<h1>后话</h1>
+<h2 id="后话">后话</h2>
 <p>接下来规划出一期 Linux 美化，一期 Linux 常用软件推荐。</p>
 
                 
