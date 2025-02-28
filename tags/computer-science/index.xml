@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Computer Science on Akashiya</title>
+    <link>https://akashiya-chime.github.io/tags/computer-science/</link>
+    <description>Recent content in Computer Science on Akashiya</description>
+    <image>
+      <title>Akashiya</title>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Aug 2022 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://akashiya-chime.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「408」英文缩写索引</title>
+      <link>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</link>
+      <pubDate>Fri, 26 Aug 2022 10:00:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</guid>
+      <description>&lt;p&gt;缩写能够减轻我们叙述上的负担，但是前提是能够理解缩写所表示的含义。本文对「408」科目中的常见缩写进行了汇总，以方便查找。&lt;/p&gt;
+&lt;p&gt;按字母进行排序，嫌麻烦可以&lt;code&gt;Ctrl + F&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「408」23计算机考研院校对比</title>
+      <link>https://akashiya-chime.github.io/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Sun, 07 Aug 2022 10:00:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</guid>
+      <description>&lt;p&gt;今年换考408试试，但是学校那么多，这个专业又卷的不行，那么应该选哪一所院校才能让我有个书读呢。该文的主要目的就是选出几个我认为值得我选择的院校进行一些数据上的对比，以增大我读上书的可能性（狗头）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「408」数据结构与算法知识归纳</title>
+      <link>https://akashiya-chime.github.io/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</link>
+      <pubDate>Thu, 14 Jul 2022 10:00:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</guid>
+      <description>&lt;p&gt;该篇汇总了研究生考试计算机科学专业基础综合（408）中，数据结构与算法所要考察的知识点，用于个人复习与总结，同时希望能够帮助到需要的人。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

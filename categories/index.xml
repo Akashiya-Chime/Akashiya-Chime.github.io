@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Akashiya</title>
+    <link>https://akashiya-chime.github.io/categories/</link>
+    <description>Recent content in Categories on Akashiya</description>
+    <image>
+      <title>Akashiya</title>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Apr 2023 11:00:00 +0000</lastBuildDate>
+    <atom:link href="https://akashiya-chime.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生活日常</title>
+      <link>https://akashiya-chime.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/</link>
+      <pubDate>Wed, 05 Apr 2023 11:00:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E5%B8%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编程开发</title>
+      <link>https://akashiya-chime.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Mon, 13 Mar 2023 18:23:59 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>应用系统</title>
+      <link>https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 09 Jan 2023 13:00:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Akashiya</title>
+    <link>https://akashiya-chime.github.io/tags/blog/</link>
+    <description>Recent content in Blog on Akashiya</description>
+    <image>
+      <title>Akashiya</title>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Jan 2023 20:39:00 +0000</lastBuildDate>
+    <atom:link href="https://akashiya-chime.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog 搭建参考</title>
+      <link>https://akashiya-chime.github.io/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</link>
+      <pubDate>Tue, 03 Jan 2023 20:39:00 +0000</pubDate>
+      <guid>https://akashiya-chime.github.io/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</guid>
+      <description>&lt;p&gt;主要是讲一下使用 Hexo 作为工具，并使用 Github pages 作为部署方案的个人静态 Blog 搭建的大致流程。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

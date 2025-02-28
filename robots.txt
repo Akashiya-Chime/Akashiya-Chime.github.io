@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://akashiya-chime.github.io/sitemap.xml
