@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Akashiya</title>
     <link>https://akashiya-chime.github.io/tags/go/</link>
     <description>Recent content in Go on Akashiya</description>
-    <image>
-      <title>Akashiya</title>
-      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 May 2021 10:00:00 +0000</lastBuildDate>
     <atom:link href="https://akashiya-chime.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +13,7 @@
       <link>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
       <pubDate>Wed, 26 May 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
-      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

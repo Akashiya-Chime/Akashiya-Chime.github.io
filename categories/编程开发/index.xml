@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编程开发 on Akashiya</title>
     <link>https://akashiya-chime.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link>
     <description>Recent content in 编程开发 on Akashiya</description>
-    <image>
-      <title>Akashiya</title>
-      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 13 Mar 2023 18:23:59 +0000</lastBuildDate>
     <atom:link href="https://akashiya-chime.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
@@ -39,38 +34,21 @@
       <link>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 19 Aug 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;
-&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;&#xA;&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>重拾前端&#43;后段重构</title>
       <link>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
       <pubDate>Wed, 26 May 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
-      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Webpack打包基础</title>
       <link>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Thu, 18 Feb 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</guid>
-      <description>&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;
-&lt;p&gt;文章放 CSDN 上了：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;&#xA;&lt;p&gt;文章放 CSDN 上了：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>

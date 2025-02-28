@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>应用系统 on Akashiya</title>
     <link>https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/</link>
     <description>Recent content in 应用系统 on Akashiya</description>
-    <image>
-      <title>Akashiya</title>
-      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Jan 2023 13:00:00 +0000</lastBuildDate>
     <atom:link href="https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
@@ -32,24 +27,21 @@
       <link>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 24 Aug 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;
-&lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
+      <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;&#xA;&lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wox与uTools对比</title>
       <link>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Fri, 02 Apr 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
-      <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;
-&lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;&#xA;&lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>软件汇总</title>
       <link>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
       <pubDate>Sat, 27 Feb 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
-      <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;
-&lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
+      <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;&#xA;&lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
