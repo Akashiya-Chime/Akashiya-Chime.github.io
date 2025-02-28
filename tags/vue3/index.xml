@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vue3 on Akashiya</title>
-    <link>http://localhost:1313/tags/vue3/</link>
+    <link>https://akashiya-chime.github.io/tags/vue3/</link>
     <description>Recent content in Vue3 on Akashiya</description>
     <image>
       <title>Akashiya</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 May 2021 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/vue3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akashiya-chime.github.io/tags/vue3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重拾前端&#43;后段重构</title>
-      <link>http://localhost:1313/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
+      <link>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
       <pubDate>Wed, 26 May 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
       <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;

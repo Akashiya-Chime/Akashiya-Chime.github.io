@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>应用系统 on Akashiya</title>
-    <link>http://localhost:1313/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/</link>
+    <link>https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/</link>
     <description>Recent content in 应用系统 on Akashiya</description>
     <image>
       <title>Akashiya</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Jan 2023 13:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akashiya-chime.github.io/categories/%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 软件推荐</title>
-      <link>http://localhost:1313/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+      <link>https://akashiya-chime.github.io/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Mon, 09 Jan 2023 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+      <guid>https://akashiya-chime.github.io/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
       <description>&lt;p&gt;上次的软件推荐快有两年了，如今接触的东西更多了，体验上手的软件也多了，又有了可推荐的。本文主要介绍一些正常使用免费的，较为小众的应用、Linux 到 Windows 可选的代替软件以及用于某些特定领域的软件。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我的 Vim 配置</title>
-      <link>http://localhost:1313/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</link>
+      <link>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 12 Nov 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;Vim 作为一款高自由度的文本编辑器，广受众大佬的喜爱，然而高自由度另一方面带来的繁琐纷杂的配置劝退了 80% 的尝试者（像极了 DND 传教时玩家被 200 多页的玩家手册劝退）。但是呢，当你配置到位了，熟悉了 Vim 的快捷操作，它会回报你，它的开发效率可能会超过任何一个你使用过的 IDE。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arch Linux 安装记录</title>
-      <link>http://localhost:1313/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
+      <link>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 24 Aug 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;
 &lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wox与uTools对比</title>
-      <link>http://localhost:1313/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
+      <link>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Fri, 02 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
       <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;
 &lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>软件汇总</title>
-      <link>http://localhost:1313/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
+      <link>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
       <pubDate>Sat, 27 Feb 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
       <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;
 &lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
     </item>

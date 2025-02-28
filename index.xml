@@ -2,100 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Akashiya</title>
-    <link>http://localhost:1313/</link>
+    <link>https://akashiya-chime.github.io/</link>
     <description>Recent content on Akashiya</description>
     <image>
       <title>Akashiya</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Apr 2023 11:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akashiya-chime.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>华为OD入职经历</title>
-      <link>http://localhost:1313/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</link>
       <pubDate>Wed, 05 Apr 2023 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</guid>
       <description>&lt;p&gt;今儿个赶上入职一天后的清明节假期，准备花一些时间总结和介绍一下我从考研二战失利到入职华为OD报道一天后的全过程，并表达一些我个人的主观感受。&lt;/p&gt;</description>
     </item>
     <item>
       <title>C语言学习-常见标准库</title>
-      <link>http://localhost:1313/posts/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E6%A0%87%E5%87%86%E5%BA%93/</link>
+      <link>https://akashiya-chime.github.io/posts/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E6%A0%87%E5%87%86%E5%BA%93/</link>
       <pubDate>Mon, 13 Mar 2023 18:23:59 +0000</pubDate>
-      <guid>http://localhost:1313/posts/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E6%A0%87%E5%87%86%E5%BA%93/</guid>
+      <guid>https://akashiya-chime.github.io/posts/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-%E5%B8%B8%E8%A7%81%E6%A0%87%E5%87%86%E5%BA%93/</guid>
       <description>&lt;p&gt;记录一些看过的标准库，以供复习和查找。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows 软件推荐</title>
-      <link>http://localhost:1313/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+      <link>https://akashiya-chime.github.io/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Mon, 09 Jan 2023 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+      <guid>https://akashiya-chime.github.io/posts/windows-%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
       <description>&lt;p&gt;上次的软件推荐快有两年了，如今接触的东西更多了，体验上手的软件也多了，又有了可推荐的。本文主要介绍一些正常使用免费的，较为小众的应用、Linux 到 Windows 可选的代替软件以及用于某些特定领域的软件。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blog 搭建参考</title>
-      <link>http://localhost:1313/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</link>
+      <link>https://akashiya-chime.github.io/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</link>
       <pubDate>Tue, 03 Jan 2023 20:39:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</guid>
+      <guid>https://akashiya-chime.github.io/posts/blog-%E6%90%AD%E5%BB%BA%E5%8F%82%E8%80%83/</guid>
       <description>&lt;p&gt;主要是讲一下使用 Hexo 作为工具，并使用 Github pages 作为部署方案的个人静态 Blog 搭建的大致流程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>「408」英文缩写索引</title>
-      <link>http://localhost:1313/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</link>
+      <link>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</link>
       <pubDate>Fri, 26 Aug 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</guid>
+      <guid>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</guid>
       <description>&lt;p&gt;缩写能够减轻我们叙述上的负担，但是前提是能够理解缩写所表示的含义。本文对「408」科目中的常见缩写进行了汇总，以方便查找。&lt;/p&gt;
 &lt;p&gt;按字母进行排序，嫌麻烦可以&lt;code&gt;Ctrl + F&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>「408」23计算机考研院校对比</title>
-      <link>http://localhost:1313/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</link>
+      <link>https://akashiya-chime.github.io/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Sun, 07 Aug 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://akashiya-chime.github.io/posts/40823%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E9%99%A2%E6%A0%A1%E5%AF%B9%E6%AF%94/</guid>
       <description>&lt;p&gt;今年换考408试试，但是学校那么多，这个专业又卷的不行，那么应该选哪一所院校才能让我有个书读呢。该文的主要目的就是选出几个我认为值得我选择的院校进行一些数据上的对比，以增大我读上书的可能性（狗头）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>「408」数据结构与算法知识归纳</title>
-      <link>http://localhost:1313/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</link>
+      <link>https://akashiya-chime.github.io/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</link>
       <pubDate>Thu, 14 Jul 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</guid>
+      <guid>https://akashiya-chime.github.io/posts/408%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9F%A5%E8%AF%86%E5%BD%92%E7%BA%B3/</guid>
       <description>&lt;p&gt;该篇汇总了研究生考试计算机科学专业基础综合（408）中，数据结构与算法所要考察的知识点，用于个人复习与总结，同时希望能够帮助到需要的人。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我的大学</title>
-      <link>http://localhost:1313/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</link>
+      <link>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</link>
       <pubDate>Tue, 31 May 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</guid>
       <description>&lt;p&gt;大学啊。眨眼就过去了呢……&lt;/p&gt;</description>
     </item>
     <item>
       <title>用过的笔记软件汇总</title>
-      <link>http://localhost:1313/posts/%E7%94%A8%E8%BF%87%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
+      <link>https://akashiya-chime.github.io/posts/%E7%94%A8%E8%BF%87%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
       <pubDate>Thu, 24 Mar 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E7%94%A8%E8%BF%87%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E7%94%A8%E8%BF%87%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
       <description>&lt;p&gt;总是喜欢玩玩各种各样的工具软件，逐渐的工具就积累下来了，有的适合自己就在使用，有的工具被更适合自己的替代，有的不适合的又卸载了。想着能不能做一些总结，当别人需要的时候能够更好地去推荐，帮他/她找到适合自己的那一个。总之，先试试汇总一些笔记软件。&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结（3）</title>
-      <link>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</link>
       <pubDate>Sun, 20 Feb 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</guid>
       <description>&lt;p&gt;上一个Blog已经是去年11月中旬的事了，然而这个Blog确是在隔一年的2月的中下旬。期间3个月，经历了全国统一研究生入学考试、参加了某互联网公司的招聘面试、完成毕设要求的万字引文文献翻译、尝试并行开发两个独立游戏等等。每个都值得单独写一篇Blog，但是为什么不呢，或许是我太懒了吧。。。然而马上就要开学了，开题报告还没有写完，游戏开发还没什么进度，核酸还没有做。就随便写点，做个小结，内容请参照目录。&lt;/p&gt;</description>
     </item>
     <item>
       <title>我的 Vim 配置</title>
-      <link>http://localhost:1313/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</link>
+      <link>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 12 Nov 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84-vim-%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;Vim 作为一款高自由度的文本编辑器，广受众大佬的喜爱，然而高自由度另一方面带来的繁琐纷杂的配置劝退了 80% 的尝试者（像极了 DND 传教时玩家被 200 多页的玩家手册劝退）。但是呢，当你配置到位了，熟悉了 Vim 的快捷操作，它会回报你，它的开发效率可能会超过任何一个你使用过的 IDE。&lt;/p&gt;</description>
     </item>
     <item>
       <title>从一件日常分歧中总结的教训</title>
-      <link>http://localhost:1313/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</link>
+      <link>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</link>
       <pubDate>Wed, 08 Sep 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</guid>
       <description>&lt;p&gt;在最近的一件开发活动上与室友的意见发生了分歧，在分歧的处理上，我竟然发现自己完全没有话语权，我认为的个人财产安全度缺失居然连屁都不是。我认为，我必须得从这件事上总结点教训。&lt;/p&gt;
 &lt;p&gt;写作之前，先放下跑团群常驻的一个标语：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -108,34 +108,34 @@
     </item>
     <item>
       <title>常用网站汇总</title>
-      <link>http://localhost:1313/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</link>
       <pubDate>Thu, 02 Sep 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</guid>
       <description>&lt;p&gt;一些我常用的，或者可能用到的，或者认为比较好的一些网站汇总。&lt;/p&gt;
 &lt;p&gt;但并不包括一些大众型的，比如百度、bilibili。&lt;/p&gt;
 &lt;p&gt;对提到的网站进行了分类并且有简要说明。&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结（2）</title>
-      <link>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</link>
       <pubDate>Wed, 01 Sep 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</guid>
       <description>&lt;p&gt;2021年8月最后一天结束了，这里象征性地做一个总结，想想自己这个假期干了些啥&lt;/p&gt;
 &lt;p&gt;就没什么实质性的东西了，水一水，准备写 ArchLinux 美化&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arch Linux 安装记录</title>
-      <link>http://localhost:1313/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
+      <link>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 24 Aug 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;
 &lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mirai-js使用</title>
-      <link>http://localhost:1313/posts/mirai-js%E4%BD%BF%E7%94%A8/</link>
+      <link>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 19 Aug 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mirai-js%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;
@@ -143,9 +143,9 @@
     </item>
     <item>
       <title>重拾前端&#43;后段重构</title>
-      <link>http://localhost:1313/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
+      <link>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
       <pubDate>Wed, 26 May 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
       <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -161,17 +161,17 @@
     </item>
     <item>
       <title>Wox与uTools对比</title>
-      <link>http://localhost:1313/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
+      <link>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Fri, 02 Apr 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
       <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;
 &lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>3月月末总结</title>
-      <link>http://localhost:1313/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</link>
+      <link>https://akashiya-chime.github.io/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 27 Mar 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://akashiya-chime.github.io/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;开学的第一个月，还有两天，看看自己这个月干了些啥。玩了点游戏，看了点电影，做了点考研相关的安排，学了点东西（C语言）。以及，想想接下来这个月要干点啥，看些啥书，考研准备到哪里，要学点啥东西。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;嘀嗒清单&lt;/li&gt;
@@ -183,17 +183,17 @@
     </item>
     <item>
       <title>软件汇总</title>
-      <link>http://localhost:1313/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
+      <link>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
       <pubDate>Sat, 27 Feb 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
       <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;
 &lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结</title>
-      <link>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 19 Feb 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;混了一个假期，想想在假期里干了些啥，包括但不限于：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;《地铁最后的曙光》&lt;/li&gt;
@@ -203,9 +203,9 @@
     </item>
     <item>
       <title>Webpack打包基础</title>
-      <link>http://localhost:1313/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</link>
+      <link>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Thu, 18 Feb 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;
 &lt;p&gt;文章放 CSDN 上了：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -213,9 +213,9 @@
     </item>
     <item>
       <title>关于</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://akashiya-chime.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://akashiya-chime.github.io/about/</guid>
       <description>&lt;div style=&#34;text-align: center!important&#34;&gt;少女找乐子中&lt;/div&gt;</description>
     </item>
   </channel>

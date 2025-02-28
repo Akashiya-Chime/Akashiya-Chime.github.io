@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Experience on Akashiya</title>
-    <link>http://localhost:1313/tags/experience/</link>
+    <link>https://akashiya-chime.github.io/tags/experience/</link>
     <description>Recent content in Experience on Akashiya</description>
     <image>
       <title>Akashiya</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 31 May 2022 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akashiya-chime.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的大学</title>
-      <link>http://localhost:1313/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</link>
+      <link>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</link>
       <pubDate>Tue, 31 May 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E6%88%91%E7%9A%84%E5%A4%A7%E5%AD%A6/</guid>
       <description>&lt;p&gt;大学啊。眨眼就过去了呢……&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结（3）</title>
-      <link>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</link>
       <pubDate>Sun, 20 Feb 2022 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%933/</guid>
       <description>&lt;p&gt;上一个Blog已经是去年11月中旬的事了，然而这个Blog确是在隔一年的2月的中下旬。期间3个月，经历了全国统一研究生入学考试、参加了某互联网公司的招聘面试、完成毕设要求的万字引文文献翻译、尝试并行开发两个独立游戏等等。每个都值得单独写一篇Blog，但是为什么不呢，或许是我太懒了吧。。。然而马上就要开学了，开题报告还没有写完，游戏开发还没什么进度，核酸还没有做。就随便写点，做个小结，内容请参照目录。&lt;/p&gt;</description>
     </item>
     <item>
       <title>从一件日常分歧中总结的教训</title>
-      <link>http://localhost:1313/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</link>
+      <link>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</link>
       <pubDate>Wed, 08 Sep 2021 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</guid>
       <description>&lt;p&gt;在最近的一件开发活动上与室友的意见发生了分歧，在分歧的处理上，我竟然发现自己完全没有话语权，我认为的个人财产安全度缺失居然连屁都不是。我认为，我必须得从这件事上总结点教训。&lt;/p&gt;
 &lt;p&gt;写作之前，先放下跑团群常驻的一个标语：&lt;/p&gt;
 &lt;blockquote&gt;

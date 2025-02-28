@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Career on Akashiya</title>
-    <link>http://localhost:1313/tags/career/</link>
+    <link>https://akashiya-chime.github.io/tags/career/</link>
     <description>Recent content in Career on Akashiya</description>
     <image>
       <title>Akashiya</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Apr 2023 11:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://akashiya-chime.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>华为OD入职经历</title>
-      <link>http://localhost:1313/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</link>
+      <link>https://akashiya-chime.github.io/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</link>
       <pubDate>Wed, 05 Apr 2023 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</guid>
+      <guid>https://akashiya-chime.github.io/posts/%E5%8D%8E%E4%B8%BAod%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86/</guid>
       <description>&lt;p&gt;今儿个赶上入职一天后的清明节假期，准备花一些时间总结和介绍一下我从考研二战失利到入职华为OD报道一天后的全过程，并表达一些我个人的主观感受。&lt;/p&gt;</description>
     </item>
   </channel>
