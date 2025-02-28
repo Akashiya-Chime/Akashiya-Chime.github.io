@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mirai on Akashiya</title>
     <link>https://akashiya-chime.github.io/tags/mirai/</link>
     <description>Recent content in Mirai on Akashiya</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Akashiya</title>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Aug 2021 10:00:00 +0000</lastBuildDate>
     <atom:link href="https://akashiya-chime.github.io/tags/mirai/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <link>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 19 Aug 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;&#xA;&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;
+&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>

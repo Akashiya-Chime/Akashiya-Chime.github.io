@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Akashiya</title>
     <link>https://akashiya-chime.github.io/</link>
     <description>Recent content on Akashiya</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Akashiya</title>
+      <url>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://akashiya-chime.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Apr 2023 11:00:00 +0000</lastBuildDate>
     <atom:link href="https://akashiya-chime.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -41,7 +46,8 @@
       <link>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</link>
       <pubDate>Fri, 26 Aug 2022 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/408%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E7%B4%A2%E5%BC%95/</guid>
-      <description>&lt;p&gt;缩写能够减轻我们叙述上的负担，但是前提是能够理解缩写所表示的含义。本文对「408」科目中的常见缩写进行了汇总，以方便查找。&lt;/p&gt;&#xA;&lt;p&gt;按字母进行排序，嫌麻烦可以&lt;code&gt;Ctrl + F&lt;/code&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;缩写能够减轻我们叙述上的负担，但是前提是能够理解缩写所表示的含义。本文对「408」科目中的常见缩写进行了汇总，以方便查找。&lt;/p&gt;
+&lt;p&gt;按字母进行排序，嫌麻烦可以&lt;code&gt;Ctrl + F&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>「408」23计算机考研院校对比</title>
@@ -90,91 +96,120 @@
       <link>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</link>
       <pubDate>Wed, 08 Sep 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E4%BB%8E%E4%B8%80%E4%BB%B6%E6%97%A5%E5%B8%B8%E5%88%86%E6%AD%A7%E4%B8%AD%E6%80%BB%E7%BB%93%E7%9A%84%E6%95%99%E8%AE%AD/</guid>
-      <description>&lt;p&gt;在最近的一件开发活动上与室友的意见发生了分歧，在分歧的处理上，我竟然发现自己完全没有话语权，我认为的个人财产安全度缺失居然连屁都不是。我认为，我必须得从这件事上总结点教训。&lt;/p&gt;&#xA;&lt;p&gt;写作之前，先放下跑团群常驻的一个标语：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;理念冲突请保持优雅&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;另外做一些声明：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;个人并不会在此事上做更多的努力（That’s in vain）&lt;/li&gt;&#xA;&lt;li&gt;优雅永不过时&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <description>&lt;p&gt;在最近的一件开发活动上与室友的意见发生了分歧，在分歧的处理上，我竟然发现自己完全没有话语权，我认为的个人财产安全度缺失居然连屁都不是。我认为，我必须得从这件事上总结点教训。&lt;/p&gt;
+&lt;p&gt;写作之前，先放下跑团群常驻的一个标语：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;理念冲突请保持优雅&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;另外做一些声明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;个人并不会在此事上做更多的努力（That’s in vain）&lt;/li&gt;
+&lt;li&gt;优雅永不过时&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>常用网站汇总</title>
       <link>https://akashiya-chime.github.io/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</link>
       <pubDate>Thu, 02 Sep 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</guid>
-      <description>&lt;p&gt;一些我常用的，或者可能用到的，或者认为比较好的一些网站汇总。&lt;/p&gt;&#xA;&lt;p&gt;但并不包括一些大众型的，比如百度、bilibili。&lt;/p&gt;&#xA;&lt;p&gt;对提到的网站进行了分类并且有简要说明。&lt;/p&gt;</description>
+      <description>&lt;p&gt;一些我常用的，或者可能用到的，或者认为比较好的一些网站汇总。&lt;/p&gt;
+&lt;p&gt;但并不包括一些大众型的，比如百度、bilibili。&lt;/p&gt;
+&lt;p&gt;对提到的网站进行了分类并且有简要说明。&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结（2）</title>
       <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</link>
       <pubDate>Wed, 01 Sep 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%932/</guid>
-      <description>&lt;p&gt;2021年8月最后一天结束了，这里象征性地做一个总结，想想自己这个假期干了些啥&lt;/p&gt;&#xA;&lt;p&gt;就没什么实质性的东西了，水一水，准备写 ArchLinux 美化&lt;/p&gt;</description>
+      <description>&lt;p&gt;2021年8月最后一天结束了，这里象征性地做一个总结，想想自己这个假期干了些啥&lt;/p&gt;
+&lt;p&gt;就没什么实质性的东西了，水一水，准备写 ArchLinux 美化&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arch Linux 安装记录</title>
       <link>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 24 Aug 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/arch-linux-%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;&#xA;&lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
+      <description>&lt;p&gt;本人安装 Arch Linux 时的参考及步骤&lt;/p&gt;
+&lt;p&gt;主要包含：启动盘制作到磁盘分区到最后驱动安装和最后图形界面安装（针对 Windows 转 Linux，UEFI 方式）&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mirai-js使用</title>
       <link>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 19 Aug 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/mirai-js%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;&#xA;&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;有关 QQ 机器人框架 Mirai 下的基于 Node.js 的框架 Mirai-js&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mirai是一个免费开源的QQ机器人框架，由于其开源和易拓展的优势，现在已经有很多基于Mirai的官方和非官方衍生框架和应用，其关系错综复杂。&lt;/p&gt;
+&lt;p&gt;Mirai-js，一个运行在 Node.js、浏览器下的，简单的 QQ 机器人开发框架。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>重拾前端&#43;后段重构</title>
       <link>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</link>
       <pubDate>Wed, 26 May 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E9%87%8D%E6%8B%BE%E5%89%8D%E7%AB%AF&#43;%E5%90%8E%E7%AB%AF%E9%87%8D%E6%9E%84/</guid>
-      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;本文包含并不限于以下内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;拿到 ECS 搞到域名后进行域名备案&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vite2 + Vue3 + TypeScript + Element-Plus 搭建前端项目&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nodejs + express 搭建后端后使用 Go 重构后端&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Wox与uTools对比</title>
       <link>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Fri, 02 Apr 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/wox%E4%B8%8Eutools%E5%AF%B9%E6%AF%94/</guid>
-      <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;&#xA;&lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近又开始吹 uTools 了，老多推送推荐 uTools，说是「国产软件之光」、「全平台装机必备」、「黑科技神器」，诸如此类，吹得不要飞起。甚至有人评论：「用了 wox 之后，“listary 是什么垃圾？”，用了 utools 之后：“wox 是什么垃圾？”」&lt;/p&gt;
+&lt;p&gt;个人最开始使用的是 Wox，其实在去年或是更早一些的时候（记不得了，感觉在疫情之前）就已经接触到 uTools 了，但是不久之后又乖乖滚回来用 wox，解释其原因，也就是此文的主要目的了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>3月月末总结</title>
       <link>https://akashiya-chime.github.io/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 27 Mar 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/3%E6%9C%88%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93/</guid>
-      <description>&lt;p&gt;开学的第一个月，还有两天，看看自己这个月干了些啥。玩了点游戏，看了点电影，做了点考研相关的安排，学了点东西（C语言）。以及，想想接下来这个月要干点啥，看些啥书，考研准备到哪里，要学点啥东西。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;嘀嗒清单&lt;/li&gt;&#xA;&lt;li&gt;Surviving Mars&lt;/li&gt;&#xA;&lt;li&gt;Annihilation&lt;/li&gt;&#xA;&lt;li&gt;C&lt;/li&gt;&#xA;&lt;li&gt;Bash 美化&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;开学的第一个月，还有两天，看看自己这个月干了些啥。玩了点游戏，看了点电影，做了点考研相关的安排，学了点东西（C语言）。以及，想想接下来这个月要干点啥，看些啥书，考研准备到哪里，要学点啥东西。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;嘀嗒清单&lt;/li&gt;
+&lt;li&gt;Surviving Mars&lt;/li&gt;
+&lt;li&gt;Annihilation&lt;/li&gt;
+&lt;li&gt;C&lt;/li&gt;
+&lt;li&gt;Bash 美化&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>软件汇总</title>
       <link>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</link>
       <pubDate>Sat, 27 Feb 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/</guid>
-      <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;&#xA;&lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
+      <description>&lt;p&gt;用电脑有一（亿）段时间了，也常常在尝试一些稀奇古怪的软件，做一个相当于 mark 一样的玩意儿（免得重装系统懒得找），包含但不限于知名或不知名的（Win10）美化软件、插件或者是工具。&lt;/p&gt;
+&lt;p&gt;代表个人习惯，用的舒服才是好的。&lt;/p&gt;</description>
     </item>
     <item>
       <title>假期总结</title>
       <link>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 19 Feb 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/%E5%81%87%E6%9C%9F%E6%80%BB%E7%BB%93/</guid>
-      <description>&lt;p&gt;混了一个假期，想想在假期里干了些啥，包括但不限于：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;《地铁最后的曙光》&lt;/li&gt;&#xA;&lt;li&gt;《为了吾王》&lt;/li&gt;&#xA;&lt;li&gt;《我们的父辈》&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;混了一个假期，想想在假期里干了些啥，包括但不限于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《地铁最后的曙光》&lt;/li&gt;
+&lt;li&gt;《为了吾王》&lt;/li&gt;
+&lt;li&gt;《我们的父辈》&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Webpack打包基础</title>
       <link>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Thu, 18 Feb 2021 10:00:00 +0000</pubDate>
       <guid>https://akashiya-chime.github.io/posts/webpack%E6%89%93%E5%8C%85%E5%9F%BA%E7%A1%80/</guid>
-      <description>&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;&#xA;&lt;p&gt;文章放 CSDN 上了：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
-    </item>
-    <item>
-      <title>Archive</title>
-      <link>https://akashiya-chime.github.io/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akashiya-chime.github.io/archives/</guid>
-      <description>archives</description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>https://akashiya-chime.github.io/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://akashiya-chime.github.io/search/</guid>
-      <description>search</description>
+      <description>&lt;p&gt;之前为了学习 Vue2 而去学了点 webpack 的基础，然而现在尤大发布 vue3 之后自己整了一个 vite，那这不得不去再学 vite&lt;/p&gt;
+&lt;p&gt;文章放 CSDN 上了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Akashiyachime/article/details/106841056&#34;&gt;https://blog.csdn.net/Akashiyachime/article/details/106841056&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>关于</title>
